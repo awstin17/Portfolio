@@ -416,3 +416,17 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* My own CSS rules
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+This is where all of my CSS rules will be stored until further notice
+*/
+
+#rebootExpand {
+  transition: height 2s;
+}
+
+.expand {
+  height: auto;
+}
