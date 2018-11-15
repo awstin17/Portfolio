@@ -1,17 +1,19 @@
 let rebootExpandSection = document.getElementById('rebootExpand');
-let arrow = document.getElementById('arrow');
-let  header = document.getElementById('rebootHeader');
+let snapzExpandSection = document.getElementById('snapzExpand');
+let stockathonExpandSection = document.getElementById('stockathonExpand');
+let bankExpandSection = document.getElementById('bankExpand');
+let header;
 
-function expand() {
+function expand(project) {
 
-    if(rebootExpandSection.style.height === "0px") {
-        rebootExpandSection.style.height = "auto";
-        arrow.style.display = "block";
+    if(project.style.height === "0px") {
+        project.style.height = "auto";
+        header = project.querySelector('.header');
         header.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
    
     else {
-        rebootExpandSection.style.height = "0px";
+        project.style.height = "0px";
         arrow.style.display = "none";
     }
 }

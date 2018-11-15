@@ -430,3 +430,9 @@ This is where all of my CSS rules will be stored until further notice
 .expand {
   height: auto;
 }
+
+.test:hover {
+  content: "this is a test";
+  opacity: 0;
+
+}
