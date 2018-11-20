@@ -423,12 +423,12 @@ there.
 This is where all of my CSS rules will be stored until further notice
 */
 
-#rebootExpand {
-  transition: height 2s;
-}
-
-.expand {
-  height: 100px;
+.dots {
+  width: 2vw; 
+  height: 2vw;
+  border: 0.5vw solid black; 
+  background-color: lightgray; 
+  margin: 0 auto
 }
 
 .learn-more {
