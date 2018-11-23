@@ -35,39 +35,42 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row" style="margin-top: 8%; vertical-align: bottom;">
-      <div class="four columns">
-        <div style="display: flex; flex-direction: row; justify-content: center; width: 160px; height: 115px; font-family: 'Rationale', sans-serif; font-size: 4rem; background-color: black; color: white; padding: 5px 20px;">
+
+    <div class="row" id="topBar">
+
+      <div id="logoContainer" class="three columns">
+        <div id="logo">
           <span>Austin</span>
-          <span style="align-self: flex-end">Wiese</span>
+          <span id="lastName">Wiese</span>
         </div>
       </div>
-      <div class="eight columns" style="display: flex; flex-direction: column; height: 125px; margin-left: 0px">
-        <div style="text-align: center; border-bottom: 1px solid black; height: 50%; font-size: 2rem; ">Web Developer /
-          Front-end /
-          Back-end / Cool Dude</div>
-        <div style=" display: flex; justify-content: space-evenly; height: 50%; flex-wrap: wrap; align-items: flex-end">
-          <a class="button" style="background-color: black; color: white; margin-bottom: 0; width: 150px" href="./index.html">About
-            Me</a>
 
-
-          <a class="button" style="margin-bottom: 0; width: 150px" href="./testPage.html">What I Do</a>
-
-
-          <a class="button" style="margin-bottom: 0; width: 150px" href="./projects.html">Projects</a>
-
-
-          <a class="button" style="margin-bottom: 0; width: 150px" href="./contact-me.html">Contact Me</a>
+      <div class="nine columns" id="coolDudeNavButtons">
+        <div id="coolDude">Web Developer / Front-end / Back-end / Cool Dude</div>
+        <div id="navButtonContainer">
+          <a class="button navButtons" id="currentPageButton" href="./index.html">About Me</a>
+          <a class="button navButtons" href="./testPage.html">What I Do</a>
+          <a class="button navButtons" href="./projects.html">Projects</a>
+          <a class="button navButtons" href="./contact-me.html">Contact Me</a>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div id="image" class="one-half column" style="line-height: 100%; margin-top: 10%;">
-        <img src="images/Profile.jpg" style=" margin: auto; vertical-align: middle; border-right: 1px solid black; padding-right: 4.1%" width="100%">
+
+    <div class="row" id="aboutMeContent">
+
+      <div id="image" class="six columns">
+        <img src="images/Profile.jpg" width="100%">
       </div>
-      <div style="width: 100px"></div>
-      <div class="one-half column" style="height: 100%; margin-top: 11%; margin-left: 0px; text-align: left">
-        <p style="height: 100%; border-left: 1px solid black; margin-left: 4.05%; padding-left: 4%"> Little baby Austin hardly talked and barely
+
+      <!-- This one column div is the line that separates the image and text -->
+      <div class="one column">
+        <div id="dividerLine"></div>
+      </div>
+      <!----------------------------------------------------------------------->
+
+      <div class="five columns">
+        <p id="myDescription"> Little baby Austin
+          hardly talked and barely
           interacted with the world. Then his mom
           bought him a computer to tinker with, and
           legend has it that’s when he came out of his
@@ -80,8 +83,9 @@
         </p>
       </div>
     </div>
+    
     <div class="row">
-      <div class="twelve column" style="margin-top: 15%">
+      <div class="twelve column" style="margin-top: 10%">
         <p>© 2018 Your Name, Inc. <span style="float: right"><a href="#">About Me</a> | <a href="#">What I Do</a> | <a
               href="#">Projects</a> | <a href="#">Contact Me</a></span></p>
       </div>
