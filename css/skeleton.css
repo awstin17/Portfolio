@@ -515,13 +515,13 @@ This is where all of my CSS rules will be stored until further notice
   color: white;
 }
 
-#aboutMeContent {
+#content {
   margin-top: 10%;
   display: block;
 }
 
 @media (min-width: 550px) {
-  #aboutMeContent {
+  #content {
     display: flex;
   }
 }
@@ -537,7 +537,7 @@ This is where all of my CSS rules will be stored until further notice
   margin: auto;
 }
 
-#myDescription {
+#text {
   font-size: 2rem;
   margin-top: 20px;
 }
