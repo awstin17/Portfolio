@@ -497,6 +497,7 @@ This is where all of my CSS rules will be stored until further notice
   align-items: flex-end;
   flex-wrap: wrap;
   margin-top: 15px;
+  align-content: space-between;
 }
 
 @media (min-width: 550px) {
@@ -679,4 +680,45 @@ This is where all of my CSS rules will be stored until further notice
   justify-content: center; 
   flex-wrap: wrap; 
   padding: 20px 0;
+}
+
+#contactHeader {
+  margin: 8% 0;
+}
+
+#contactHeaderColumn {
+  display: flex; 
+  align-items: center;
+}
+
+.brackets {
+  font-family: Sahitya; 
+  font-size: 10rem;
+}
+
+#questionsOrConcerns {
+  font-size: 3rem; 
+  margin-bottom: 0;
+  text-align: center; 
+  padding: 0 10px;
+}
+
+#form {
+  font-size: 2rem;
+}
+
+input.inputColor, textarea.inputColor{
+  background-color: rgb(247, 247, 247);
+}
+
+#message {
+  height: 220px;
+}
+
+#submitButton {
+  font-size: 2rem; 
+  display: block; 
+  height: 60px; 
+  margin: 5% auto auto auto; 
+  padding: 0 60px;
 }

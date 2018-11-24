@@ -36,55 +36,54 @@
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
-            <div class="row" id="topBar">
+        <div class="row" id="topBar">
 
-                    <div id="logoContainer" class="three columns">
-                        <div id="logo">
-                            <span>Austin</span>
-                            <span id="lastName">Wiese</span>
-                        </div>
-                    </div>
-        
-                    <div class="nine columns" id="coolDudeNavButtons">
-                        <div id="coolDude">Web Developer / Front-end / Back-end / Cool Dude</div>
-                        <div id="navButtonContainer">
-                            <a class="button navButtons" href="./index.html">About Me</a>
-                            <a class="button navButtons" href="./testPage.html">What I Do</a>
-                            <a class="button navButtons" href="./projects.html">Projects</a>
-                            <a class="button navButtons" id="currentPageButton" href="./contact-me.html">Contact Me</a>
-                        </div>
-                    </div>
+            <div id="logoContainer" class="three columns">
+                <div id="logo">
+                    <span>Austin</span>
+                    <span id="lastName">Wiese</span>
                 </div>
+            </div>
 
-        <div class="row" style="margin: 8% 0">
-            <div class="twelve columns" style="display: flex; align-items: center">
-                <h1 style="font-family: Sahitya; font-size: 10rem">{</h1>
-                <p style="font-size: 3rem; margin-bottom: 0; text-align: center; padding: 0 10px">Questions, Comments,
-                    or Concerns? Can't wait to hear them!</p>
-                <h1 style="font-family: Sahitya; font-size: 10rem">}</h1>
+            <div class="nine columns" id="coolDudeNavButtons">
+                <div id="coolDude">Web Developer / Front-end / Back-end / Cool Dude</div>
+                <div id="navButtonContainer">
+                    <a class="button navButtons" href="./index.html">About Me</a>
+                    <a class="button navButtons" href="./testPage.html">What I Do</a>
+                    <a class="button navButtons" href="./projects.html">Projects</a>
+                    <a class="button navButtons" id="currentPageButton" href="./contact-me.html">Contact Me</a>
+                </div>
             </div>
         </div>
 
-        <form style="font-size: 2rem" action="https://formspree.io/austinwiese.acw@gmail.com" method="POST">
-            <div class="row" style="margin-bottom: 5%">
+        <div class="row" id="contactHeader">
+            <div class="twelve columns" id="contactHeaderColumn">
+                <h1 class="brackets">{</h1>
+                <p id="questionsOrConcerns">Questions, Comments, or Concerns? Can't wait to hear them!</p>
+                <h1 class="brackets">}</h1>
+            </div>
+        </div>
+
+        <form id="form" action="https://formspree.io/austinwiese.acw@gmail.com" method="POST">
+            <div class="row">
                 <div class="six columns">
                     <label for="subject">Name:</label>
-                    <input class="u-full-width" type="text" name="name" placeholder="Jane Doe / John Shmoe" id="name" style="background-color: rgb(247, 247, 247)">
+                    <input class="u-full-width inputColor" type="text" name="name" placeholder="Jane Doe / John Shmoe"
+                        id="name">
                     <label for="email">Email:</label>
-                    <input class="u-full-width" type="email" name="email" placeholder="email@email.com" id="email"
-                        style="background-color: rgb(247, 247, 247)">
+                    <input class="u-full-width inputColor" type="email" name="email" placeholder="email@email.com" id="email">
                     <label for="subject">Subject:</label>
-                    <input class="u-full-width" type="text" name="_subject" placeholder="Plz Do My Website" id="subject"
-                        style="background-color: rgb(247, 247, 247)">
+                    <input class="u-full-width inputColor" type="text" name="_subject" placeholder="Plz Do My Website"
+                        id="subject">
                 </div>
                 <div class="six columns">
                     <label for="message">Message:</label>
-                    <textarea class="u-full-width" name="message" placeholder="Just thought I'd say hi, Austin …" id="message"
-                        style="background-color: rgb(247, 247, 247); height: 220px"></textarea>
+                    <textarea class="u-full-width inputColor" name="message" placeholder="Just thought I'd say hi, Austin …"
+                        id="message"></textarea>
                 </div>
 
             </div>
-            <input class="button-primary" type="submit" value="Submit" style="font-size: 2rem; display: block; height: 60px; margin: auto; padding: 0 60px">
+            <input class="button-primary" type="submit" value="Submit" id="submitButton">
 
         </form>
 
