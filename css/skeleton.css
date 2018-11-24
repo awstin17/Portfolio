@@ -32,7 +32,7 @@
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 8% auto;
   padding: 0 20px;
   box-sizing: border-box; }
 .column,
@@ -721,4 +721,26 @@ input.inputColor, textarea.inputColor{
   height: 60px; 
   margin: 5% auto auto auto; 
   padding: 0 60px;
+}
+
+#footer {
+  background-color:rgb(56, 56, 56); 
+  color: white;
+  font-size: 1.5rem;
+}
+
+#footerContainer {
+  padding: 30px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+#copyright {
+  margin-bottom: 0;
+}
+
+.icons {
+  margin: 0 10px;
+  font-size: 2.5rem;
 }
