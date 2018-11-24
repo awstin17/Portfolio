@@ -36,64 +36,63 @@
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
-        <div class="row" style="margin-top: 8%; vertical-align: bottom;">
-            <div class="four columns">
-                <div style="display: flex; flex-direction: row; justify-content: center; width: 160px; height: 115px; font-family: 'Rationale', sans-serif; font-size: 4rem; background-color: black; color: white; padding: 5px 20px;">
+        <div class="row" id="topBar">
+
+            <div id="logoContainer" class="three columns">
+                <div id="logo">
                     <span>Austin</span>
-                    <span style="align-self: flex-end">Wiese</span>
+                    <span id="lastName">Wiese</span>
                 </div>
             </div>
-            <div class="eight columns" style="display: flex; flex-direction: column; height: 125px; margin-left: 0px">
-                <div style="text-align: center; border-bottom: 1px solid black; height: 50%; font-size: 2rem; ">Web
-                    Developer /
-                    Front-end /
-                    Back-end / Cool Dude</div>
-                <div style=" display: flex; justify-content: space-evenly; height: 50%; flex-wrap: wrap; align-items: flex-end">
-                    <a class="button" style="margin-bottom: 0; width: 150px" href="./index.html">About
-                        Me</a>
 
-
-                    <a class="button" style="margin-bottom: 0; width: 150px" href="./testPage.html">What I Do</a>
-
-
-                    <a class="button" style="background-color: black; color: white; margin-bottom: 0; width: 150px"
-                        href="./projects.html">Projects</a>
-
-
-                    <a class="button" style="margin-bottom: 0; width: 150px" href="./contact-me.html">Contact Me</a>
+            <div class="nine columns" id="coolDudeNavButtons">
+                <div id="coolDude">Web Developer / Front-end / Back-end / Cool Dude</div>
+                <div id="navButtonContainer">
+                    <a class="button navButtons" href="./index.html">About Me</a>
+                    <a class="button navButtons" href="./testPage.html">What I Do</a>
+                    <a class="button navButtons" id="currentPageButton" href="./projects.html">Projects</a>
+                    <a class="button navButtons" href="./contact-me.html">Contact Me</a>
                 </div>
             </div>
         </div>
-        <div class="row" style="display: flex; align-items: center">
-            <div class="two columns" style="margin-top: 11%; text-align: center">
+
+        <div class="row projectsContainer">
+
+            <div class="two columns dotsContainer">
                 <div class="dots">&nbsp;</div>
             </div>
-            <div onclick="expand(rebootExpandSection, 0)" class="eight columns" style="position: relative; max-height: 600px; margin-top: 11%; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black">
-                <h3 style="padding: 3% 0; margin-bottom: 7px">Reboot</h3>
-                <img src="images/Login Page Reboot.PNG" style="width: 80%">
-                <p style="padding: 3%; margin-bottom: 0; font-size: 2rem">Reboot is a team-built, iPad oriented
+
+            <div onclick="expand(rebootExpandSection, 0)" class="eight columns projects">
+                <h3 class="projectTitle">Reboot</h3>
+                <img src="images/Login Page Reboot.PNG" width="80%">
+                <p class="projectDescription">Reboot is a team-built, iPad oriented
                     application to help veterans
                     transition
                     into civilian life. Think of it as a personal assistant!</p>
                 <span class="learn-more">Learn More</span>
             </div>
-            <div class="two columns" style="margin-top: 11%;">
-                <div class="dots"> &nbsp;</div>
+
+            <div class="two columns dotsContainer">
+                <div class="dots">&nbsp;</div>
             </div>
 
         </div>
-        <div id="rebootExpand" style="height: 0px; overflow: hidden">
-            <p style="text-align: center; font-size: 100px;"> &darr;</p>
-            <div class="row" style="color: white; background-color: rgb(56, 56, 56); padding: 3%">
-                <a href="https://github.com/awstin17/reboot.git" target="_blank" class="button button-primary" style="font-size: 3rem; width: 100%; padding: 15px; white-space: normal; height: 100%">Github
+
+        <div id="rebootExpand" class="unexpanded">
+            <p class="arrow"> &darr;</p>
+            <div class="row expandContent">
+                <a href="https://github.com/awstin17/reboot.git" target="_blank" class="button button-primary repositoryLink">Github
                     Repository Link</a>
-                    <div class="header"></div>
-                <div class="twelve columns" style="display: flex; justify-content: space-between; padding: 20px 0">
+                <div class="header"></div>
+                <!-- This div only exists to be able to scroll to
+                                                   Same div can be found with each project -->
+
+                <div class="twelve columns" id="rebootImageContainer">
                     <img src="images/Transition Page.PNG" width=48% height="48%">
                     <img src="images/Dashboard Reboot.PNG" width=48% height=48%>
                 </div>
-                <h3 style="padding: 10px 0;  text-align: center; border-bottom: 2px solid white">My Contributions</h3>
-                <ol style="font-size: 2rem; padding: 10px 0 0 20px; list-style-position: outside">
+                <h3 class="contributions">My Contributions</h3>
+                <ol class="contributionsList">
                     <li> The lovely looking transition page that you see on the top. This is where the user can
                         self-assess various categories of their life to track their progress </li>
                     <li> The slider functionality on the transition page </li>
@@ -101,8 +100,72 @@
                     <li> The charts on both pages. Made with the chartjs library and the chartjs datalabels plugin to
                         make those snazzy labels that circle the charts</li>
                 </ol>
-                <h3 style="text-align: center; padding: 10px 0; border-bottom: 2px solid white">Made With</h3>
-                <div class="row" style="padding-bottom: 10px; display: flex; justify-content: center; align-items: center">
+                <h3 class="madeWith">Made With</h3>
+                <div class="row iconContainer">
+
+                    <div class="two columns">
+                        <img width="100%" src="images/Nodejslogo.png">
+                    </div>
+
+                    <div class="two columns">
+                        <img src="images/angular.svg">
+                    </div>
+
+                    <div class="three columns">
+                        <img width="100%" src="images/mongodblogo.png">
+                    </div>
+
+                    <div class="two columns">
+                        <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg">
+                    </div>
+
+                    <div class="two columns">
+                        <img id="herokuIcon" src="images/heroku.svg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row projectsContainer">
+            <div class="two columns dotsContainer">
+                <div class="dots"> &nbsp;</div>
+            </div>
+            <div onclick="expand(snapzExpandSection, 1)" class="eight columns projects">
+                <h3 class="projectTitle">Snapz</h3>
+                <img src="images/Snapz register page.PNG" width="40%">
+                <p class="projectDescription">An ionic app for mobile phones that enables the user to
+                    capture photos and store them with a subtitle and description
+                    <span class="learn-more">Learn More</span>
+            </div>
+            <div class="two columns dotsContainer">
+                <div class="dots"> &nbsp;</div>
+            </div>
+        </div>
+
+        <div id="snapzExpand" class="unexpanded">
+            <p class="arrow"> &darr;</p>
+            <div class="row expandContent">
+
+                <a href="https://github.com/awstin17/Capture-Store.git" target="_blank" class="button button-primary repositoryLink">Github
+                    Repository Link</a>
+                <div class="header"></div>
+                <div class="twelve columns" id="snapzImageContainer">
+                    <img src="images/Snapz login page.PNG" width="31.5%" height="1%">
+                    <img src="images/Snapz photo page.PNG" width="32%" height="10%">
+                    <img src="images/Snapz edit page.PNG" width="32%" height="10%">
+                </div>
+                <h3 class="contributions">Technical Details</h3>
+                <ol class="contributionsList">
+                    <li> This is a hybrid mobile application that allows the user to access native camera functionality
+                        through a Cordova API to take a picture and save it in a remote database linked to their
+                        profile </li>
+                    <li> The user may also edit their photo to attach a subtitle and description, or delete it from
+                        their profile if they wish </li>
+                    <li> A mock-up was made prior to starting the project. Made with Balsamiq </li>
+                </ol>
+                <h3 class="madeWith">Made With</h3>
+                <div class="row iconContainer">
                     <div class="two columns">
                         <img style="width: 100%" src="images/Nodejslogo.png">
                     </div>
@@ -111,177 +174,127 @@
                         <img src="images/angular.svg">
                     </div>
 
-                    <div class="three columns" style="display: flex; align-items: center">
-                        <img style="width: 100%" src="images/mongodblogo.png">
-                    </div>
-
-                    <div class="two columns" style="display: flex; align-items: center">
-                        <img style="width: 100%" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg">
+                    <div class="three columns">
+                        <img width="100%" src="images/mongodblogo.png">
                     </div>
 
                     <div class="two columns">
-                        <img style="width: 50%; margin-left: 25%" src="images/heroku.svg">
+                        <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg">
+                    </div>
+
+                    <div class="three columns">
+                        <img style="width: 100%" src="images/cordova_logo_white.png">
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <div class="row" style="display: flex; align-items: center">
-            <div class="two columns" style="margin-top: 11%;">
+        <div class="row projectsContainer">
+            <div class="two columns dotsContainer">
                 <div class="dots"> &nbsp;</div>
             </div>
-            <div onclick="expand(snapzExpandSection, 1)" class="eight columns" style="position: relative; max-height: 600px; margin-top: 11%; text-align: center; border-top: 1.5px solid black; border-bottom: 1.5px solid black">
-                <h3 style="padding: 3% 0; margin-bottom: 7px">Snapz</h3>
-                <img src="images/Snapz register page.PNG" style=" width: 40%">
-                <p style="padding: 3% 0; margin-bottom: 0; font-size: 2rem">An ionic app for mobile phones that enables the user to
-                    capture photos and store them with a subtitle and description
-                    <span class="learn-more">Learn More</span>
-            </div>
-            <div class="two columns" style="margin-top: 11%;">
-                <div class="dots"> &nbsp;</div>
-            </div>
-        </div>
-
-        <div id="snapzExpand" style="height: 0px; overflow: hidden">
-                <p style="text-align: center; font-size: 100px;"> &darr;</p>
-                <div class="row" style="color: white; background-color: rgb(56, 56, 56); padding: 3%">
-                    
-                    <a href="https://github.com/awstin17/Capture-Store.git" target="_blank" class="button button-primary" style="font-size: 3rem; width: 100%; padding: 15px; white-space: normal; height: 100%">Github
-                        Repository Link</a>
-                        <div class="header"></div>
-                    <div class="twelve columns" style="display: flex; justify-content: space-between; padding: 20px 0">
-                        <img src="images/Snapz login page.PNG" style="width: 31.5%; height: 1%">
-                        <img src="images/Snapz photo page.PNG" style="width: 32%; height: 10%">
-                        <img src="images/Snapz edit page.PNG" style="width: 32%; height: 10%">
-                    </div>
-                    <h3 style="padding: 10px 0;  text-align: center; border-bottom: 2px solid white">Technical Details</h3>
-                    <ol style="font-size: 2rem; padding: 10px 0 0 20px; list-style-position: outside">
-                        <li> This is a hybrid mobile application that allows the user to access native camera functionality through a Cordova API to take a picture and save it in a remote database linked to their profile </li>
-                        <li> The user may also edit their photo to attach a subtitle and description, or delete it from their profile if they wish </li>
-                        <li> A mock-up was made prior to starting the project. Made with Balsamiq </li>
-                    </ol>
-                    <h3 style="text-align: center; padding: 10px 0; border-bottom: 2px solid white">Made With</h3>
-                    <div class="row" style="padding-bottom: 10px; display: flex; justify-content: center; align-items: center">
-                        <div class="two columns">
-                            <img style="width: 100%" src="images/Nodejslogo.png">
-                        </div>
-    
-                        <div class="two columns">
-                            <img src="images/angular.svg">
-                        </div>
-    
-                        <div class="three columns" style="display: flex; align-items: center">
-                            <img style="width: 100%" src="images/mongodblogo.png">
-                        </div>
-    
-                        <div class="two columns" style="display: flex; align-items: center">
-                            <img style="width: 100%" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg">
-                        </div>
-    
-                        <div class="three columns">
-                            <img style="width: 100%" src="images/cordova_logo_white.png">
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-
-        <div class="row" style="display: flex; align-items: center">
-            <div class="two columns" style="margin-top: 11%;">
-                <div class="dots"> &nbsp;</div>
-            </div>
-            <div onclick="expand(stockathonExpandSection, 2)" class="eight columns" style="position: relative; margin-top: 11%; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black">
-                <h3 style="padding: 3% 0; margin-bottom: 7px">Stockathon</h3>
-                <img src="images/Stockathon past trends.PNG" style=" width: 100%; padding: 58px 0">
-                <p style="padding: 3% 0; margin-bottom: 0; font-size: 2rem">A MEAN stack app that tells you historical stock data as
+            <div onclick="expand(stockathonExpandSection, 2)" class="eight columns projects">
+                <h3 class="projectTitle">Stockathon</h3>
+                <img src="images/Stockathon past trends.PNG" width="100%" id="stockathonPhoto">
+                <p class="projectDescription">A MEAN stack app that tells you historical stock data as
                     well as stock values for the day</p>
                 <span class="learn-more">Learn More</span>
             </div>
-            <div class="two columns" style="margin-top: 11%;">
+            <div class="two columns dotsContainer">
                 <div class="dots"> &nbsp;</div>
             </div>
         </div>
 
-        <div id="stockathonExpand" style="height: 0px; overflow: hidden">
-                <p style="text-align: center; font-size: 100px;"> &darr;</p>
-                <div class="row" style="color: white; background-color: rgb(56, 56, 56); padding: 3%">
-                    <a href="https://github.com/awstin17/clarity.git" target="_blank" class="button button-primary" style="font-size: 3rem; width: 100%; padding: 15px; white-space: normal; height: 100%">Github
-                        Repository Link</a>
-                        <div class="header"></div>
-                    <div class="twelve columns" style="display: flex; justify-content: center; flex-wrap: wrap; padding: 20px 0">
-                        <img src="images/Stockathon home page.PNG" style="width: 90%; height: 1%; margin-bottom: 3%">
-                        <img src="images/Stockathon login page.PNG" style="width: 90%; height: 10%">
-                        
+        <div id="stockathonExpand" class="unexpanded">
+            <p class="arrow"> &darr;</p>
+            <div class="row expandContent">
+                <a href="https://github.com/awstin17/clarity.git" target="_blank" class="button button-primary repositoryLink">Github
+                    Repository Link</a>
+                <div class="header"></div>
+                <div class="twelve columns" id="stockathonImageContainer">
+                    <img src="images/Stockathon home page.PNG" width="90%" height="1%" style="margin-bottom: 3%">
+                    <img src="images/Stockathon login page.PNG" width="90%" height="10%">
+
+                </div>
+                <h3 class="contributions">Technical Details</h3>
+                <ol class="contributionsList">
+                    <li> This web application retrieves stock market data from the Alpha Vantage API </li>
+                    <li> The graph that displays monthly stock data was created using the ng2-charts library</li>
+                    <li> General application layout created using the clarity seed HTML/CSS framework </li>
+                    <li> Users can create their own profile and save specific stocks they want to track to it. That
+                        way, when they log in again, they'll see the most up to date information for the stocks that
+                        they care about</li>
+                </ol>
+                <h3 class="madeWith">Made With</h3>
+                <div class="row iconContainer">
+                    <div class="two columns">
+                        <img width="100%" src="images/Nodejslogo.png">
                     </div>
-                    <h3 style="padding: 10px 0;  text-align: center; border-bottom: 2px solid white">Technical Details</h3>
-                    <ol style="font-size: 2rem; padding: 10px 0 0 20px; list-style-position: outside">
-                        <li> This web application retrieves stock market data from the Alpha Vantage API </li>
-                        <li> The graph that displays monthly stock data was created using the ng2-charts library</li>
-                        <li> General application layout created using the clarity seed HTML/CSS framework </li>
-                        <li> Users can create their own profile and save specific stocks they want to track to it. That way, when they log in again, they'll see the most up to date information for the stocks that they care about</li>
-                    </ol>
-                    <h3 style="text-align: center; padding: 10px 0; border-bottom: 2px solid white">Made With</h3>
-                    <div class="row" style="padding-bottom: 10px; display: flex; justify-content: center; align-items: center">
-                        <div class="two columns">
-                            <img style="width: 100%" src="images/Nodejslogo.png">
-                        </div>
-    
-                        <div class="two columns">
-                            <img src="images/angular.svg">
-                        </div>
-    
-                        <div class="three columns" style="display: flex; align-items: center">
-                            <img style="width: 100%" src="images/mongodblogo.png">
-                        </div>
-    
-                        <div class="two columns" style="display: flex; align-items: center">
-                            <img style="width: 100%" src="images/Clarity Logo.png">
-                        </div>
-    
+
+                    <div class="two columns">
+                        <img src="images/angular.svg">
                     </div>
+
+                    <div class="three columns">
+                        <img width="100%" src="images/mongodblogo.png">
+                    </div>
+
+                    <div class="two columns">
+                        <img width="100%" src="images/Clarity Logo.png">
+                    </div>
+
                 </div>
             </div>
-        <div class="row" style="display: flex; justify-content: center; align-items: center">
-            <div class="two columns" style="margin-top: 11%;">
+        </div>
+        
+        <div class="row projectsContainer">
+            <div class="two columns dotsContainer">
                 <div class="dots"> &nbsp;</div>
             </div>
-            <div onclick="expand(bankExpandSection, 3)" class="eight columns" style="position: relative; margin-top: 11%; text-align: center; border-top: 1.5px solid black; border-bottom: 1.5px solid black">
-                <h3 style="padding: 3% 0; margin-bottom: 7px">Bank Application</h3>
-                <img src="images/Bank Application.PNG" style=" width: 80%">
-                <p style="padding: 3% 0; margin-bottom: 0; font-size: 2rem">An app that emulates ATM interactions or interactions with a
+            <div onclick="expand(bankExpandSection, 3)" class="eight columns projects">
+                <h3 class="projectTitle">Bank Application</h3>
+                <img src="images/Bank Application.PNG" width="80%">
+                <p class="projectDescription">An app that emulates ATM interactions or interactions with a
                     teller at a bank
                     <span class="learn-more">Learn More</span>
             </div>
-            <div class="two columns" style="margin-top: 11%;">
+            <div class="two columns dotsContainer">
                 <div class="dots"> &nbsp;</div>
             </div>
         </div>
 
-        <div id="bankExpand" style="height: 0px; overflow: hidden">
-                <p style="text-align: center; font-size: 100px;"> &darr;</p>
-                <div class="row" style="color: white; background-color: rgb(56, 56, 56); padding: 3%">
-                    <a href="https://github.com/awstin17/Bank-Application.git" target="_blank" class="button button-primary" style="font-size: 3rem; width: 100%; padding: 15px; white-space: normal; height: 100%">Github
-                        Repository Link</a>
-                        <div class="header"></div>
-                    <h3 style="padding: 10px 0;  text-align: center; border-bottom: 2px solid white">Technical Details</h3>
-                    <ol style="font-size: 2rem; padding: 10px 0 0 20px; list-style-position: outside">
-                        <li> This is a single page application which allows the user to "deposit" or "widthdraw" money from their account </li>
-                        <li> Created using angular routing and angular services</li>
-                    </ol>
-                    <h3 style="text-align: center; padding: 10px 0; border-bottom: 2px solid white">Made With</h3>
-                    <div class="row" style="padding-bottom: 10px; display: flex; justify-content: center; align-items: center">
-                        <div class="two columns">
-                            <img style="width: 100%" src="images/Nodejslogo.png">
-                        </div>
-    
-                        <div class="two columns">
-                            <img src="images/angular.svg">
-                        </div>
-    
+        <div id="bankExpand" class="unexpanded">
+            <p class="arrow"> &darr;</p>
+            <div class="row expandContent">
+                <a href="https://github.com/awstin17/Bank-Application.git" target="_blank" class="button button-primary repositoryLink">Github
+                    Repository Link</a>
+
+                <div class="header"></div>
+
+                <h3 class="contributions">Technical Details</h3>
+
+                <ol class="contributionsList">
+                    <li> This is a single page application which allows the user to "deposit" or "widthdraw" money from
+                        their account </li>
+                    <li> Created using angular routing and angular services</li>
+                </ol>
+
+                <h3 class="madeWith">Made With</h3>
+
+                <div class="row iconContainer">
+                    <div class="two columns">
+                        <img width="100%" src="images/Nodejslogo.png">
                     </div>
+
+                    <div class="two columns">
+                        <img src="images/angular.svg">
+                    </div>
+
                 </div>
             </div>
+        </div>
+
         <div class="row">
             <div class="twelve column" style="margin-top: 15%">
                 <p>© 2018 Your Name, Inc. <span style="float: right"><a href="#">About Me</a> | <a href="#">What I Do</a>

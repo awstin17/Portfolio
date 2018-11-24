@@ -4,29 +4,28 @@ let stockathonExpandSection = document.getElementById('stockathonExpand');
 let bankExpandSection = document.getElementById('bankExpand');
 let header;
 let hovers = document.getElementsByClassName('learn-more');
-console.log(hovers[0])
 
 function expand(project, numberInList) {
 
-    if(project.style.height === "0px") {
-        project.style.height = "auto";
+    if(project.className === "unexpanded") {
+        project.className = "expanded";
         header = project.querySelector('.header');
         header.scrollIntoView({ behavior: 'smooth', block: 'center' });
         changeHoverText(numberInList);
     }
    
     else {
-        project.style.height = "0px";
+        project.className = "unexpanded";
         changeHoverText(numberInList);
     }
+}
 
 function changeHoverText(numberInList) {
-        if(hovers[numberInList].innerHTML === "Learn More") {
-            hovers[numberInList].innerHTML = "Collapse"; 
-        }
-        else {
-            hovers[numberInList].innerHTML = "Learn More";
-        }
+    if(hovers[numberInList].innerHTML === "Learn More") {
+        hovers[numberInList].innerHTML = "Collapse"; 
+    }
+    else {
+        hovers[numberInList].innerHTML = "Learn More";
+    }
 
-}
 }
