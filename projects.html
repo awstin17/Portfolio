@@ -29,7 +29,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
 
 </head>
 
@@ -51,7 +51,7 @@
                 <div id="coolDude">Web Developer / Front-end / Back-end / Cool Dude</div>
                 <div id="navButtonContainer">
                     <a class="button navButtons" href="./index.html">About Me</a>
-                    <a class="button navButtons" href="./testPage.html">What I Do</a>
+                    <a class="button navButtons" href="./what-i-do.html">What I Do</a>
                     <a class="button navButtons" id="currentPageButton" href="./projects.html">Projects</a>
                     <a class="button navButtons" href="./contact-me.html">Contact Me</a>
                 </div>
@@ -87,7 +87,7 @@
                     Repository Link</a>
                 <div class="header"></div>
                 <!-- This div only exists to be able to scroll to
-                                                   Same div can be found with each project -->
+                        Same div can be found with each project -->
 
                 <div class="twelve columns" id="rebootImageContainer">
                     <img src="images/Transition Page.PNG" width=48% height="48%">
@@ -95,7 +95,7 @@
                 </div>
                 <h3 class="contributions">My Contributions</h3>
                 <ol class="contributionsList">
-                    <li> The lovely looking transition page that you see on the top. This is where the user can
+                    <li> The lovely looking transition page that you see on the left. This is where the user can
                         self-assess various categories of their life to track their progress </li>
                     <li> The slider functionality on the transition page </li>
                     <li> The dashboard page which you see on the top right </li>
@@ -159,17 +159,18 @@
                 </div>
                 <h3 class="contributions">Technical Details</h3>
                 <ol class="contributionsList">
-                    <li> This is a hybrid mobile application that allows the user to access native camera functionality
-                        through a Cordova API to take a picture and save it in a remote database linked to their
-                        profile </li>
-                    <li> The user may also edit their photo to attach a subtitle and description, or delete it from
-                        their profile if they wish </li>
                     <li> A mock-up was made prior to starting the project. Made with Balsamiq </li>
+                    <li> Created a database so users can register and log in</li>
+                    <li> This hybrid mobile application allows the user to access native camera functionality
+                        through a Cordova API to take a picture and save it to their profile in the database </li>
+                    <li> The user may also edit their photos' subtitles and descriptions, or delete the photo from
+                        their profile if they wish </li>
+
                 </ol>
                 <h3 class="madeWith">Made With</h3>
                 <div class="row iconContainer">
                     <div class="two columns">
-                        <img style="width: 100%" src="images/Nodejslogo.png">
+                        <img width="100%" src="images/Nodejslogo.png">
                     </div>
 
                     <div class="two columns">
@@ -185,7 +186,7 @@
                     </div>
 
                     <div class="three columns">
-                        <img style="width: 100%" src="images/cordova_logo_white.png">
+                        <img width="100%" src="images/cordova_logo_white.png">
                     </div>
 
                 </div>
@@ -221,10 +222,10 @@
                 </div>
                 <h3 class="contributions">Technical Details</h3>
                 <ol class="contributionsList">
-                    <li> This web application retrieves stock market data from the Alpha Vantage API </li>
+                    <li> This web application retrieves stock market data from the <a id="alphavantageLink" href="https://www.alphavantage.co/">Alpha Vantage API</a> </li>
                     <li> The graph that displays monthly stock data was created using the ng2-charts library</li>
                     <li> General application layout created using the clarity seed HTML/CSS framework </li>
-                    <li> Users can create their own profile and save specific stocks they want to track to it. That
+                    <li> Created a database so users can register, log in, and save specific stocks they want to track. That
                         way, when they log in again, they'll see the most up to date information for the stocks that
                         they care about</li>
                 </ol>
@@ -249,7 +250,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row projectsContainer">
             <div class="two columns dotsContainer">
                 <div class="dots"> &nbsp;</div>
@@ -279,7 +280,7 @@
                 <ol class="contributionsList">
                     <li> This is a single page application which allows the user to "deposit" or "widthdraw" money from
                         their account </li>
-                    <li> Created using angular routing and angular services</li>
+                    <li> Made possible with angular routing and angular services</li>
                 </ol>
 
                 <h3 class="madeWith">Made With</h3>
@@ -300,15 +301,15 @@
 
     <div class="row" id="footer">
         <div class="twelve column" id="footerContainer">
-          <p id="copyright">© 2018 Austin Wiese.</p>
-    
-          <div>
-            <a href="contact-me.html"><i class="far fa-envelope icons"></i></a>
-            <a href="https://www.linkedin.com/in/austin-wiese-80a52b91/" target="blank"><i class="fab fa-linkedin icons"></i></a>
-            <a href="https://github.com/awstin17" target="blank"><i class="fab fa-github icons"></i></a>
-          </div>
+            <p id="copyright">© 2018 Austin Wiese.</p>
+
+            <div>
+                <a href="contact-me.html"><i class="far fa-envelope icons"></i></a>
+                <a href="https://www.linkedin.com/in/austin-wiese-80a52b91/" target="blank"><i class="fab fa-linkedin icons"></i></a>
+                <a href="https://github.com/awstin17" target="blank"><i class="fab fa-github icons"></i></a>
+            </div>
         </div>
-      </div>
+    </div>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="portfolio.js"></script>

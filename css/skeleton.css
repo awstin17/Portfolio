@@ -543,6 +543,16 @@ This is where all of my CSS rules will be stored until further notice
   margin-top: 20px;
 }
 
+#technologiesUsed {
+  text-align: center; 
+  border-bottom: 1px solid black; 
+  margin-bottom: 40px;
+}
+
+#technologiesUsedList {
+  font-size: 2rem;
+}
+
 .dotsContainer {
   margin-top: 11%;
   display: none;
@@ -690,6 +700,10 @@ This is where all of my CSS rules will be stored until further notice
   flex-wrap: wrap; 
   padding: 20px 0;
   margin-bottom: 20px;
+}
+
+#alphavantageLink {
+  text-decoration: none;
 }
 
 #contactHeader {
