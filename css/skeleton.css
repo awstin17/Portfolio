@@ -545,6 +545,13 @@ This is where all of my CSS rules will be stored until further notice
 
 .dotsContainer {
   margin-top: 11%;
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .dotsContainer {
+    display: block;
+  }
 }
 
 .dots {
@@ -633,6 +640,7 @@ This is where all of my CSS rules will be stored until further notice
   display: flex; 
   justify-content: space-between; 
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .contributions {  
@@ -669,6 +677,7 @@ This is where all of my CSS rules will be stored until further notice
   display: flex; 
   justify-content: space-between; 
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 #stockathonPhoto {
@@ -680,6 +689,7 @@ This is where all of my CSS rules will be stored until further notice
   justify-content: center; 
   flex-wrap: wrap; 
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 #contactHeader {
