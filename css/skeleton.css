@@ -444,16 +444,19 @@ This is where all of my CSS rules will be stored until further notice
   }
 }
 #logo {
-  display: flex; 
-  justify-content: center; 
-  width: 160px; 
-  height: 115px; 
-  font-family: 'Rationale', sans-serif; 
-  font-size: 4rem; 
-  background-color: black; 
-  color: white; 
-  padding: 5px 20px;
+  position: relative;
+  right: 3px;
+  width: 220px;
   margin: auto;
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  #logo {
+    position: relative;
+    right: 25px;
+    bottom: 50px;
+  }
 }
 
 #lastName {
