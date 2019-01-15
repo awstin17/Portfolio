@@ -519,7 +519,7 @@ This is where all of my CSS rules will be stored until further notice
   margin-top: 20px;
 }
 
-#dividerLine {
+.dividerLine {
   background-color:black; 
   height: 100%; 
   width: 1px; 
@@ -529,6 +529,15 @@ This is where all of my CSS rules will be stored until further notice
 #text {
   font-size: 2rem;
   margin-top: 20px;
+}
+
+.credential-image-row {
+  display: flex;
+  align-items: center;
+}
+
+.credential-text {
+  font-size: 2rem;
 }
 
 #technologiesUsed {
