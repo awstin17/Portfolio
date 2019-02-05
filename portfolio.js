@@ -10,7 +10,7 @@ function expand(project, numberInList) {
     if(project.className === "unexpanded") {
         project.className = "expanded";
         header = project.querySelector('.header');
-        header.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // header.scrollIntoView({ behavior: 'smooth', block: 'center' });
         changeHoverText(numberInList);
     }
    

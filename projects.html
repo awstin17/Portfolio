@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
 
+        <link rel="stylesheet" href="path/to/swiper.min.css">
+
 </head>
 
 <body>
@@ -57,23 +59,38 @@
 
         <div class="row projectsContainer">
 
-            <div class="two columns dotsContainer">
-                <div class="dots">&nbsp;</div>
-            </div>
+             
 
-            <div onclick="expand(rebootExpandSection, 0)" class="eight columns projects">
+            <div onclick="expand(rebootExpandSection, 0)" class="twelve columns projects">
                 <h3 class="projectTitle">Reboot</h3>
-                <img src="images/Login Page Reboot.PNG" width="80%">
+                <div class="carousel">
+                    <input id="image1" type="radio" name="image-selector" checked="checked" />
+                    <label for="image3">View image 4</label>
+                    <img src="images/Login Page Reboot.PNG" width="50%">
+                  
+                    <input id="image2" type="radio" name="image-selector" />
+                    <label for="image1">View image 1</label>
+                    <img src="images/Transition Page.PNG">
+                  
+                    <input id="image3" type="radio" name="image-selector" />
+                    <label for="image2">View image 2</label>
+                    <img src="images/Dashboard Reboot.PNG">
+                  
+                    
+                    
+                    <label for="image3">View image 4</label>
+                    <label for="image1">View image 1</label>
+                  </div>
                 <p class="projectDescription">Reboot is a team-built, iPad oriented
                     application to help veterans
                     transition
                     into civilian life. Think of it as a personal assistant!</p>
-                <span class="learn-more">Learn More</span>
+                <!-- <span class="learn-more">Learn More</span> -->
             </div>
 
-            <div class="two columns dotsContainer">
+            <!-- <div class="two columns dotsContainer">
                 <div class="dots">&nbsp;</div>
-            </div>
+            </div> -->
 
         </div>
 
@@ -219,10 +236,12 @@
                 </div>
                 <h3 class="contributions">Technical Details</h3>
                 <ol class="contributionsList">
-                    <li> This web application retrieves stock market data from the <a id="alphavantageLink" href="https://www.alphavantage.co/">Alpha Vantage API</a> </li>
+                    <li> This web application retrieves stock market data from the <a id="alphavantageLink" href="https://www.alphavantage.co/">Alpha
+                            Vantage API</a> </li>
                     <li> The graph that displays monthly stock data was created using the ng2-charts library</li>
                     <li> General application layout created using the clarity seed HTML/CSS framework </li>
-                    <li> Created a database so users can register, log in, and save specific stocks they want to track. That
+                    <li> Created a database so users can register, log in, and save specific stocks they want to track.
+                        That
                         way, when they log in again, they'll see the most up to date information for the stocks that
                         they care about</li>
                 </ol>
@@ -310,6 +329,9 @@
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="portfolio.js"></script>
+    <script src="path/to/swiper.min.js"></script>
+    
+
 </body>
 
 </html>
