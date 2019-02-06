@@ -31,8 +31,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
 
-        <link rel="stylesheet" href="path/to/swiper.min.css">
-
 </head>
 
 <body>
@@ -59,40 +57,29 @@
 
         <div class="row projectsContainer">
 
-             
 
-            <div onclick="expand(rebootExpandSection, 0)" class="twelve columns projects">
+
+            <div class="twelve columns projects">
                 <h3 class="projectTitle">Reboot</h3>
-                <div class="carousel">
-                    <input id="image1" type="radio" name="image-selector" checked="checked" />
-                    <label for="image3">View image 4</label>
-                    <img src="images/Login Page Reboot.PNG" width="50%">
-                  
-                    <input id="image2" type="radio" name="image-selector" />
-                    <label for="image1">View image 1</label>
-                    <img src="images/Transition Page.PNG">
-                  
-                    <input id="image3" type="radio" name="image-selector" />
-                    <label for="image2">View image 2</label>
-                    <img src="images/Dashboard Reboot.PNG">
-                  
-                    
-                    
-                    <label for="image3">View image 4</label>
-                    <label for="image1">View image 1</label>
-                  </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button onclick="nextImage('rebootCarousel')" style="width: 10%; font-size: 40px;">&larr;</button>
+                    <div id="rebootCarousel" class="carousel" style="width: 80%">
+                        <img width="100%" class="projectImages displayingImage" src="images/Login Page Reboot.PNG">
+                        <img width="100%" class="projectImages hiddenImage" src="images/Transition Page.PNG">
+                        <img width="100%" class="projectImages hiddenImage" src="images/Dashboard Reboot.PNG">
+                    </div>
+                    <button onclick="previousImage('rebootCarousel')" style="font-size: 40px; width: 10%">&rarr;</button>
+                </div>
                 <p class="projectDescription">Reboot is a team-built, iPad oriented
                     application to help veterans
                     transition
                     into civilian life. Think of it as a personal assistant!</p>
-                <!-- <span class="learn-more">Learn More</span> -->
+
             </div>
 
-            <!-- <div class="two columns dotsContainer">
-                <div class="dots">&nbsp;</div>
-            </div> -->
-
         </div>
+
+        <button onclick="expand(rebootExpandSection, 0)" class="learn-more">Learn More</button>
 
         <div id="rebootExpand" class="unexpanded">
             <p class="arrow"> &darr;</p>
@@ -103,10 +90,6 @@
                 <!-- This div only exists to be able to scroll to
                         Same div can be found with each project -->
 
-                <div class="twelve columns" id="rebootImageContainer">
-                    <img src="images/Transition Page.PNG" width=48% height="48%">
-                    <img src="images/Dashboard Reboot.PNG" width=48% height=48%>
-                </div>
                 <h3 class="contributions">My Contributions</h3>
                 <ol class="contributionsList">
                     <li> The lovely looking transition page that you see on the left. This is where the user can
@@ -144,20 +127,28 @@
         </div>
 
         <div class="row projectsContainer">
-            <div class="two columns dotsContainer">
-                <div class="dots"> &nbsp;</div>
-            </div>
-            <div onclick="expand(snapzExpandSection, 1)" class="eight columns projects">
+
+            <div class="twelve columns projects">
                 <h3 class="projectTitle">Snapz</h3>
-                <img src="images/Snapz register page.PNG" width="40%">
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button onclick="nextImage('snapzCarousel')" style="width: 10%; font-size: 40px;">&larr;</button>
+                    <div id="snapzCarousel" class="carousel" style="width: 40%; margin: auto;">
+                        <img class="displayingImage projectImages" src="images/Snapz register page.PNG">
+                        <img class="hiddenImage projectImages" src="images/Snapz login page.PNG">
+                        <img class="hiddenImage projectImages" src="images/Snapz photo page.PNG">
+                        <img class="hiddenImage projectImages" src="images/Snapz edit page.PNG">
+                    </div>
+                    <button onclick="previousImage('snapzCarousel')" style="font-size: 40px; width: 10%">&rarr;</button>
+                </div>
+
                 <p class="projectDescription">An ionic app for mobile phones that enables the user to
-                    capture photos and store them with a subtitle and description
-                    <span class="learn-more">Learn More</span>
+                    capture photos and store them with a subtitle and description </p>
             </div>
-            <div class="two columns dotsContainer">
-                <div class="dots"> &nbsp;</div>
-            </div>
+
         </div>
+
+        <button onclick="expand(snapzExpandSection, 1)" class="learn-more">Learn More</button>
 
         <div id="snapzExpand" class="unexpanded">
             <p class="arrow"> &darr;</p>
@@ -166,11 +157,6 @@
                 <a href="https://github.com/awstin17/Capture-Store.git" target="_blank" class="button button-primary repositoryLink">Github
                     Repository Link</a>
                 <div class="header"></div>
-                <div class="twelve columns" id="snapzImageContainer">
-                    <img src="images/Snapz login page.PNG" width="31.5%" height="1%">
-                    <img src="images/Snapz photo page.PNG" width="32%" height="10%">
-                    <img src="images/Snapz edit page.PNG" width="32%" height="10%">
-                </div>
                 <h3 class="contributions">Technical Details</h3>
                 <ol class="contributionsList">
                     <li> A mock-up was made prior to starting the project. Made with Balsamiq </li>
@@ -208,20 +194,23 @@
         </div>
 
         <div class="row projectsContainer">
-            <div class="two columns dotsContainer">
-                <div class="dots"> &nbsp;</div>
-            </div>
-            <div onclick="expand(stockathonExpandSection, 2)" class="eight columns projects">
+            <div class="twelve columns projects">
                 <h3 class="projectTitle">Stockathon</h3>
-                <img src="images/Stockathon past trends.PNG" width="100%" id="stockathonPhoto">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button onclick="nextImage('stockathonCarousel')" style="width: 10%; font-size: 40px;">&larr;</button>
+                    <div id="stockathonCarousel" class="carousel" style="width: 80%; margin: auto">
+                        <img src="images/Stockathon past trends.PNG" class="projectImages hiddenImage">
+                        <img src="images/Stockathon home page.PNG" class="projectImages displayingImage">
+                        <img src="images/Stockathon login page.PNG" class="projectImages hiddenImage">
+                    </div>
+                    <button onclick="previousImage('stockathonCarousel')" style="font-size: 40px; width: 10%">&rarr;</button>
+                </div>
                 <p class="projectDescription">A MEAN stack app that tells you historical stock data as
                     well as stock values for the day</p>
-                <span class="learn-more">Learn More</span>
-            </div>
-            <div class="two columns dotsContainer">
-                <div class="dots"> &nbsp;</div>
             </div>
         </div>
+
+        <button onclick="expand(stockathonExpandSection, 2)" class="learn-more">Learn More</button>
 
         <div id="stockathonExpand" class="unexpanded">
             <p class="arrow"> &darr;</p>
@@ -229,11 +218,6 @@
                 <a href="https://github.com/awstin17/clarity.git" target="_blank" class="button button-primary repositoryLink">Github
                     Repository Link</a>
                 <div class="header"></div>
-                <div class="twelve columns" id="stockathonImageContainer">
-                    <img src="images/Stockathon home page.PNG" width="90%" height="1%" style="margin-bottom: 3%">
-                    <img src="images/Stockathon login page.PNG" width="90%" height="10%">
-
-                </div>
                 <h3 class="contributions">Technical Details</h3>
                 <ol class="contributionsList">
                     <li> This web application retrieves stock market data from the <a id="alphavantageLink" href="https://www.alphavantage.co/">Alpha
@@ -268,20 +252,21 @@
         </div>
 
         <div class="row projectsContainer">
-            <div class="two columns dotsContainer">
-                <div class="dots"> &nbsp;</div>
-            </div>
-            <div onclick="expand(bankExpandSection, 3)" class="eight columns projects">
+            <div class="twelve columns projects">
                 <h3 class="projectTitle">Bank Application</h3>
-                <img src="images/Bank Application.PNG" width="80%">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button onclick="nextImage('stockathonCarousel')" style="width: 10%; font-size: 40px;">&larr;</button>
+                    <div id="stockathonCarousel" class="carousel" style="width: 80%; margin: auto">
+                        <img src="images/Bank Application.PNG" class="projectImages displayingImage">
+                    </div>
+                    <button onclick="previousImage('stockathonCarousel')" style="font-size: 40px; width: 10%">&rarr;</button>
+                </div>
                 <p class="projectDescription">An app that emulates ATM interactions or interactions with a
                     teller at a bank
-                    <span class="learn-more">Learn More</span>
-            </div>
-            <div class="two columns dotsContainer">
-                <div class="dots"> &nbsp;</div>
             </div>
         </div>
+
+        <button onclick="expand(bankExpandSection, 3)" class="learn-more">Learn More</button>
 
         <div id="bankExpand" class="unexpanded">
             <p class="arrow"> &darr;</p>
@@ -329,8 +314,6 @@
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="portfolio.js"></script>
-    <script src="path/to/swiper.min.js"></script>
-    
 
 </body>
 
