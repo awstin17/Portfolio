@@ -572,6 +572,79 @@ This is where all of my CSS rules will be stored until further notice
   margin-bottom: 7px;
 }
 
+.carousel {
+  display: flex; 
+  
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.leftButtonCarousel, .rightButtonCarousel {
+  width: 50%;
+  padding: 0px;
+  font-size: 40px;
+  border: none;
+}
+
+.leftButtonCarousel {
+  text-align: left;
+}
+
+.rightButtonCarousel {
+  text-align: right;
+}
+
+.carouselIcons {
+  cursor: pointer;
+}
+
+#snapzCarousel, #rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+  order: 9;
+  margin: auto;
+}
+
+#rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+  width: 100%;
+}
+
+#snapzCarousel {
+  width: 60%;
+}
+
+@media (min-width: 550px) {
+  .leftButtonCarousel, .rightButtonCarousel {
+    width: 10%;
+  }
+
+  #snapzCarousel, #rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+    order: 0;
+  }
+
+  #rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+    width: 80%;
+  }
+
+  #snapzCarousel {
+    width: 40%;
+  }
+  .carousel {
+    flex-wrap: nowrap;
+  }
+}
+
+.projectImages {
+  width: 100%;
+  margin: auto;
+}
+
+.hiddenImage {
+  display: none;
+}
+
+.displayingImage {
+  display: block;
+}
+
 .projectDescription {
   padding: 3%; 
   margin-bottom: 0; 
@@ -701,17 +774,4 @@ input.inputColor, textarea.inputColor{
 .icons {
   margin: 0 10px;
   font-size: 2.5rem;
-}
-
-.displayingImage {
-  display: block;
-}
-
-.hiddenImage {
-  display: none;
-}
-
-.projectImages {
-  width: 100%;
-  margin: auto;
 }
