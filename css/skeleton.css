@@ -625,7 +625,7 @@ This is where all of my CSS rules will be stored until further notice
   }
 
   #snapzCarousel {
-    width: 40%;
+    width: 30%;
   }
   .carousel {
     flex-wrap: nowrap;

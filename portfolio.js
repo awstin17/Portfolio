@@ -34,7 +34,8 @@ function nextImage(carousel) {
     el = document.querySelector('#' + carousel);
 
     if (el.querySelectorAll(".displayingImage")[0].nextElementSibling) {
-        el.querySelectorAll(".displayingImage")[0].nextElementSibling.className = "displayingImage";
+        el.querySelectorAll(".displayingImage")[0].nextElementSibling.classList.remove("hiddenImage");
+        el.querySelectorAll(".displayingImage")[0].nextElementSibling.classList.add("displayingImage");
         el.querySelectorAll(".displayingImage")[0].classList.add("hiddenImage");
         el.querySelectorAll(".displayingImage")[0].classList.remove("displayingImage");
     }
