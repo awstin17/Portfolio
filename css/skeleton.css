@@ -678,7 +678,7 @@ This is where all of my CSS rules will be stored until further notice
   justify-content: space-around;
 }
 
-.repositoryLink {
+.expandLinks {
   font-size: 3rem; 
   width: 45%; 
   padding: 15px; 
@@ -705,11 +705,29 @@ This is where all of my CSS rules will be stored until further notice
   border-bottom: 2px solid white;
 }
 
-.iconContainer {
+.iconsContainer {
   padding-bottom: 10px; 
   display: flex; 
   justify-content: center; 
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.iconContainer {
+  width: 33%;
+  margin: auto;
+}
+
+@media (min-width: 550px) {
+  .iconContainer {
+    width: 25%;
+  }
+}
+
+@media (min-width: 750px) {
+  .iconContainer {
+    width: 20%;
+  }
 }
 
 #herokuIcon {
