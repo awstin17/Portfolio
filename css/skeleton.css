@@ -425,9 +425,7 @@ This is where all of my CSS rules will be stored until further notice
 
 #topBar {
   margin-top: 8%;
-  display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-bottom: 40px;
 }
 
 #logoContainer {
@@ -451,56 +449,37 @@ This is where all of my CSS rules will be stored until further notice
   display: block;
 }
 
-@media (min-width: 1000px) {
-  #logo {
-    position: relative;
-    right: 25px;
-    bottom: 50px;
-  }
+#name {
+  font-family: Baskerville Old Face;
+  font-size: 4rem; 
+  text-align: center; 
+  font-weight: bold;
 }
 
-#lastName {
-  align-self: flex-end;
-}
-
-#coolDudeNavButtons {
-  display: flex; 
-  flex-direction: column; 
-  /* height: 125px; */
+#heading {
   width: 100%; 
   margin-top: 8%;
   margin-left: 0;
 }
 
-@media (min-width: 550px) {
-  #coolDudeNavButtons {
-    height: 125px;
-  }
-}
-
 @media (min-width: 1000px) {
-  #coolDudeNavButtons {
+  #heading {
     width: 74%;
-    margin-top: 0;
-    margin-left: 4%;
+    margin-left: 3%;
+    margin-top: 2%;
   }
 }
 
 #coolDude {
   text-align: center; 
-  border-bottom: 1px solid black; 
-  height: 50%; 
-  font-size: 2rem; 
+  font-size: 3rem; 
 }
 
 #navButtonContainer {
   display: flex; 
   justify-content: space-evenly; 
-  height: 50%; 
-  align-items: flex-end;
   flex-wrap: wrap;
-  margin-top: 15px;
-  align-content: space-between;
+  padding: 40px 0;
 }
 
 @media (min-width: 550px) {
@@ -510,13 +489,19 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .navButtons {
-  margin-bottom: 0; 
-  width: 150px;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 10px 0;
+  width: 100%;
+  height: auto;
 }
 
 #currentPageButton {
   background-color: black; 
   color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 20px;
 }
 
 #content {
@@ -534,7 +519,7 @@ This is where all of my CSS rules will be stored until further notice
   margin-top: 20px;
 }
 
-#dividerLine {
+.dividerLine {
   background-color:black; 
   height: 100%; 
   width: 1px; 
@@ -544,6 +529,15 @@ This is where all of my CSS rules will be stored until further notice
 #text {
   font-size: 2rem;
   margin-top: 20px;
+}
+
+.credential-image-row {
+  display: flex;
+  align-items: center;
+}
+
+.credential-text {
+  font-size: 2rem;
 }
 
 #technologiesUsed {
