@@ -424,8 +424,8 @@ This is where all of my CSS rules will be stored until further notice
 */
 
 #topBar {
-  margin-top: 8%;
-  margin-bottom: 40px;
+  margin-top: 4%;
+  /* margin-bottom: 40px; */
 }
 
 #logoContainer {
@@ -593,12 +593,12 @@ This is where all of my CSS rules will be stored until further notice
   /* text-shadow: 1px 10px 20px grey; */
 }
 
-#snapzCarousel, #rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+#snapzCarousel, #rebootCarousel, #stockathonCarousel, #bankAppCarousel, #whatsinthebagsCarousel {
   order: 9;
   margin: auto;
 }
 
-#rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+#rebootCarousel, #stockathonCarousel, #bankAppCarousel, #whatsinthebagsCarousel {
   width: 100%;
 }
 
@@ -611,12 +611,12 @@ This is where all of my CSS rules will be stored until further notice
     width: 10%;
   }
 
-  #snapzCarousel, #rebootCarousel, #stockathonCarousel, #bankAppCarousel {
+  #snapzCarousel, #rebootCarousel, #stockathonCarousel, #bankAppCarousel, #whatsinthebagsCarousel {
     order: 0;
   }
 
-  #rebootCarousel, #stockathonCarousel, #bankAppCarousel {
-    width: 80%;
+  #rebootCarousel, #stockathonCarousel, #bankAppCarousel, #whatsinthebagsCarousel {
+    width: 70%;
   }
 
   #snapzCarousel {
