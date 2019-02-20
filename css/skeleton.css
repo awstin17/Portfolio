@@ -152,7 +152,18 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  font-size: 1.7rem;
+  margin-top: 20px; }
+
+  /* Larger than phablet */
+@media (min-width: 550px) {
+  p { font-size: 1.85rem;}
+}
+
+ /* Larger than tablet */
+@media (min-width: 750px) {
+  p { font-size: 2rem;}
+}
 
 
 /* Links
@@ -447,6 +458,7 @@ This is where all of my CSS rules will be stored until further notice
   width: 220px;
   margin: auto;
   display: block;
+  box-shadow: none;
 }
 
 #name {
@@ -524,16 +536,6 @@ This is where all of my CSS rules will be stored until further notice
   height: 100%; 
   width: 1px; 
   margin: auto;
-}
-
-#text {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-.credential-image-row {
-  display: flex;
-  align-items: center;
 }
 
 .credential-text {
@@ -794,4 +796,30 @@ input.inputColor, textarea.inputColor{
 .icons {
   margin: 0 10px;
   font-size: 2.5rem;
+}
+
+img {
+  box-shadow: 0px 0px 20px;
+}
+
+.verticalCenter {
+  display: block;
+}
+
+@media (min-width: 550px) {
+  .verticalCenter {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.knowMoreContainer {
+  display: block
+}
+
+@media (min-width: 550px) {
+  .knowMoreContainer {
+    display: flex;
+    align-items: center;
+  }
 }
