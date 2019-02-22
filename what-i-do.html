@@ -27,8 +27,8 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 
@@ -38,28 +38,30 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-      <div class="row" id="topBar">
+    <div class="row" id="topBar">
 
-          <div id="logoContainer" class="three columns">
-            <img id="logo" src="images/First Logo.png">
-          </div>
-    
-          <div class="nine columns" id="heading">
-              <h2 id="name"> Austin Wiese </h2>
-              <h5 id="coolDude">Front and back-end web developer (and cool dude)</h5>
-          </div>
-        </div>
-    
-        <div id="navButtonContainer">
-            <a class="button navButtons" href="./index.html">About Me</a>
-            <a class="button navButtons" href="./projects.html">Projects</a>
-            <a class="button navButtons" href="./contact-me.html">Contact Me</a>
-          </div>
-        <h2 id="currentPageButton">WHAT I DO</h2>
+      <div id="logoContainer" class="three columns">
+        <img id="logo" src="images/First Logo.png">
+      </div>
 
-    <div class="row" id="content">
-      <div class="five columns">
-        <h4 id="technologiesUsed">Technologies I use: </h4>
+      <div class="nine columns" id="heading">
+        <h2 id="name"> Austin Wiese </h2>
+        <h5 id="coolDude">Front and back-end web developer (and cool dude)</h5>
+      </div>
+    </div>
+
+    <div id="navButtonContainer">
+      <a class="button navButtons" href="./index.html">About Me</a>
+      <a class="button navButtons" href="./projects.html">Projects</a>
+      <a class="button navButtons" href="./contact-me.html">Contact Me</a>
+    </div>
+    <h2 id="currentPageButton">WHAT I DO</h2>
+
+    <h2 class="sectionHeader">Technologies I use: </h2>
+
+    <div class="row verticalCenter">
+      <div class="six columns">
+
         <ul id="technologiesUsedList">
           <li> Mongo Database </li>
           <li> Angular and Ionic Frameworks </li>
@@ -67,20 +69,75 @@
           <li> Typescript / Javascript / HTML / CSS</li>
           <li> Heroku / Git / Github </li>
         </ul>
-        <p id="text"> I use all of these to make elegant and
-          functional websites, web applications, and
-          mobile applications. Front-end and back-end!
-        </p>
       </div>
-
-      <!-- This one column div is the line that separates the image and text -->
-      <div class="one column">
-        <div id="dividerLine"></div>
-      </div>
-      <!----------------------------------------------------------------------->
 
       <div id="image" class="six columns">
         <img src="images/Code.jpg" width="100%">
+      </div>
+    </div>
+    <p> I use all of these to make elegant and
+      functional websites, web applications, and
+      mobile applications. Front-end and back-end!
+    </p>
+
+    <h2 class="sectionHeader">WordPress Sites</h2>
+    <p>I also make WordPress sites for clients. If you're in need of a website for your small business, your blog, your
+      creative portfolio, etc., I'm your guy! At the end, you'll have a bright and shiny new website just like these
+      other ones I've made</p>
+
+    <div class="row" style="text-align: center">
+      <div class="six columns">
+        <h4><a href="https://www.whatsinthebags.com/">whatsinthebags.com</a></h4>
+        <img src="images/WITB Home.png" width="100%">
+      </div>
+      <div class="six columns">
+        <h4><a href="https://wesleystudi.com/">wesleystudi.com</a></h4>
+        <img src="images/Wesley Home Page.png" width="100%">
+      </div>
+    </div>
+
+    <p>Generally, the way the projects go is in three steps:</p>
+
+    <div class="row stepsContainer">
+      <div class="four columns test">
+        <p>1. Establish styles, fonts, aesthetics, messages you want to convey</p>
+      </div>
+      <div class="four columns test">
+        <p>2. Create a mock-up to discuss before we actually get into WordPress</p>
+      </div>
+      <div class="four columns test">
+        <p>3. Create the site in WordPress and teach you to maintain it!</p>
+      </div>
+    </div>
+
+    <h2 class="sectionHeader">Work with me!</h2>
+
+    <div class="row">
+      <div class="twelve columns testimonialContainer">
+          <i class="fas fa-quote-left leftQuote"></i>
+          
+              <blockquote class="testimonialText">Austin Wiese is a great web designer. He designed my website to reflect what I wanted in every
+                  detail from the home page, about page, logo for my bags, subscription page and much more. Austin is
+                  professional, diligent and creative. I’m truly thankful that I had the opportunity to work with him.
+                </blockquote>
+                <p class="testimonialName">- Monica G , Whatsinthebags.com</p>
+        
+        <i class="fas fa-quote-right quoteRight"></i>
+      </div>
+    </div>
+
+    <p> If you'd like to collaborate with me on any web development project, WordPress, Angular, or otherwise, you can:
+    </p>
+
+    <div class="row knowMoreContainer">
+      <div class="four columns">
+        <a class="button bottomButtons" href="./contact-me.html">Contact Me</a>
+      </div>
+      <div class="four columns">
+        <p>Or, if you want to see more of what I'm capable of before that:</p>
+      </div>
+      <div class="four columns">
+        <a class="button bottomButtons" href="./projects.html">Examples of my work</a>
       </div>
     </div>
   </div>
@@ -91,7 +148,8 @@
 
       <div>
         <a href="contact-me.html"><i class="far fa-envelope icons"></i></a>
-        <a href="https://www.linkedin.com/in/austin-wiese-80a52b91/" target="blank"><i class="fab fa-linkedin icons"></i></a>
+        <a href="https://www.linkedin.com/in/austin-wiese-80a52b91/" target="blank"><i
+            class="fab fa-linkedin icons"></i></a>
         <a href="https://github.com/awstin17" target="blank"><i class="fab fa-github icons"></i></a>
       </div>
     </div>

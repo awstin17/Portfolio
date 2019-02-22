@@ -151,18 +151,25 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {
+p, li {
   font-size: 1.7rem;
   margin-top: 20px; }
 
+blockquote {
+  font-size:1.3rem;
+  margin-top: 20px
+}
+
   /* Larger than phablet */
 @media (min-width: 550px) {
-  p { font-size: 1.85rem;}
+  p, li { font-size: 1.85rem;}
+  blockquote { font-size: 1.45rem;}
 }
 
  /* Larger than tablet */
 @media (min-width: 750px) {
-  p { font-size: 2rem;}
+  p, li { font-size: 2rem;}
+  blockquote {font-size: 1.6rem}
 }
 
 
@@ -530,19 +537,50 @@ This is where all of my CSS rules will be stored until further notice
   height: auto;
 }
 
-#technologiesUsed {
-  text-align: center; 
-  border-bottom: 1px solid black; 
-  margin-bottom: 40px;
-}
-
-#technologiesUsedList {
-  font-size: 2rem;
-}
-
 .learn-more {
   height: 60px; 
   width: 100%; 
+}
+
+.stepsContainer {
+  display:block;
+}
+
+@media (min-width: 550px) {
+  .stepsContainer {
+    display: flex;
+  }
+}
+
+.test {
+  border: 2px solid lightgray;
+  outline: 3px solid darkgray;
+  padding:0 20px;
+}
+
+.testimonialContainer {
+  border-radius: 250px; 
+  background-color:lightpink; 
+  padding: 60px 80px;
+}
+
+.leftQuote {
+  font-size: 5rem; 
+  position: relative; 
+  bottom: 15px; 
+  right: 60px;
+}
+
+.testimonialName, .testimonialText {
+  text-align: center;
+}
+
+.quoteRight {
+  float: right; 
+  font-size: 5rem; 
+  position: relative; 
+  top: 15px; 
+  left: 60px;
 }
 
 .projects {
