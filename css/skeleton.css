@@ -436,7 +436,6 @@ This is where all of my CSS rules will be stored until further notice
 
 #topBar {
   margin-top: 4%;
-  /* margin-bottom: 40px; */
 }
 
 #logoContainer {
@@ -447,23 +446,26 @@ This is where all of my CSS rules will be stored until further notice
   #logoContainer {
     width: 22%;
   }
-
-  #topBar {
-    display: block;
-  }
 }
+
 #logo {
   position: relative;
   right: 3px;
-  width: 220px;
+  width: 150px;
   margin: auto;
   display: block;
   box-shadow: none;
 }
 
+@media (min-width: 750px) {
+  #logo {
+    width:220px;
+  }
+}
+
+
 #name {
   font-family: Baskerville Old Face;
-  font-size: 4rem; 
   text-align: center; 
   font-weight: bold;
 }
@@ -478,20 +480,19 @@ This is where all of my CSS rules will be stored until further notice
   #heading {
     width: 74%;
     margin-left: 3%;
-    margin-top: 2%;
+    margin-top: 70px;
   }
 }
 
 #coolDude {
   text-align: center; 
-  font-size: 3rem; 
 }
 
 #navButtonContainer {
   display: flex; 
   justify-content: space-evenly; 
   flex-wrap: wrap;
-  padding: 40px 0;
+  margin-top: 20px;
 }
 
 @media (min-width: 550px) {
@@ -501,11 +502,14 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .navButtons {
-  border-radius: 10px;
-  font-size: 2rem;
   padding: 10px 0;
   width: 100%;
   height: auto;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 #currentPageButton {
@@ -516,30 +520,8 @@ This is where all of my CSS rules will be stored until further notice
   border-radius: 20px;
 }
 
-#content {
-  margin-top: 10%;
-  display: block;
-}
-
-@media (min-width: 550px) {
-  #content {
-    display: flex;
-  }
-}
-
-#image {
-  margin-top: 20px;
-}
-
-.dividerLine {
-  background-color:black; 
-  height: 100%; 
-  width: 1px; 
-  margin: auto;
-}
-
-.credential-text {
-  font-size: 2rem;
+.sectionHeader {
+  margin: 75px 0 100px 0;
 }
 
 #technologiesUsed {
