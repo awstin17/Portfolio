@@ -524,6 +524,12 @@ This is where all of my CSS rules will be stored until further notice
   margin: 75px 0 100px 0;
 }
 
+.bottomButtons {
+  padding: 10px 0;
+  width: 100%;
+  height: auto;
+}
+
 #technologiesUsed {
   text-align: center; 
   border-bottom: 1px solid black; 
