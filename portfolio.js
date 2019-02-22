@@ -1,3 +1,4 @@
+let wesleystudiExpandSection = document.getElementById('wesleystudiExpand')
 let whatsinthebagsExpandSection = document.getElementById('whatsinthebagsExpand');
 let rebootExpandSection = document.getElementById('rebootExpand');
 let snapzExpandSection = document.getElementById('snapzExpand');
