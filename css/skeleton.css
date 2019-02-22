@@ -752,6 +752,10 @@ This is where all of my CSS rules will be stored until further notice
   }
 }
 
+.icon {
+  box-shadow: none;
+}
+
 #herokuIcon {
   width: 50%; 
   margin-left: 25%;
