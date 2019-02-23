@@ -537,12 +537,17 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .sectionHeader {
-  margin: 50px 0 66px 0;
+  padding: 50px 0 66px 0;
+  background-image: url(../images/sectionheaderbackground.png);
+  background-position: 50% 66%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 @media (min-width: 550px) {
   .sectionHeader {
-    margin: 75px 0 100px 0;
+    padding: 75px 0 100px 0;
   }
 }
 
@@ -804,7 +809,13 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 #contactHeader {
-  margin: 8% 0;
+  padding: 50px 0 66px 0;
+}
+
+@media (min-width: 550px) {
+  #contactHeader {
+    padding: 75px 0 100px 0;
+  }
 }
 
 #contactHeaderColumn {
