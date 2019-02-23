@@ -191,9 +191,9 @@ blockquote {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: rgb(159, 145, 199) /*#1EAEDB;*/ }
 a:hover {
-  color: #0FA0CE; }
+  color: #8B7EAF /*#0FA0CE;*/ }
 
 
 /* Buttons
@@ -239,8 +239,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: rgb(51, 155, 240); /* old color #33C3F0; */
-  border-color: rgb(51, 155, 240); } /* old color #33C3F0; */
+  background-color: rgb(159, 145, 199); /*rgb(51, 155, 240);*/ 
+  border-color: rgb(159, 145, 199); /*rgb(51, 155, 240);*/ }  
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -252,8 +252,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: rgb(30, 155, 219); /* old color  #1EAEDB */
-  border-color: rgb(30, 155, 219); } /* old color  #1EAEDB */
+  background-color: #8B7EAF;/*rgb(30, 155, 219);*/ 
+  border-color: #8B7EAF;/*rgb(30, 155, 219);*/ }  
 
 
 /* Forms
@@ -706,7 +706,6 @@ This is where all of my CSS rules will be stored until further notice
 .projectImages {
   width: 100%;
   margin: auto;
-  box-shadow: 0px 10px 20px grey;
 }
 
 .hiddenImage {
