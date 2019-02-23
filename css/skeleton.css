@@ -126,10 +126,10 @@
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
+html is set to 62.5% initially so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) I currently have it set to */
 html {
-  font-size: 62.5%; }
+  font-size: 75%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
