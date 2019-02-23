@@ -810,22 +810,25 @@ This is where all of my CSS rules will be stored until further notice
 #contactHeaderColumn {
   display: flex; 
   align-items: center;
+  justify-content: space-between
 }
 
 .brackets {
+  position:relative;
+  bottom: 10px;
   font-family: Sahitya; 
-  font-size: 10rem;
+  font-size: 8rem;
+}
+
+@media (min-width: 550px) {
+  .brackets {
+    font-size: 10rem;
+  }
 }
 
 #questionsOrConcerns {
-  font-size: 3rem; 
-  margin-bottom: 0;
   text-align: center; 
   padding: 0 10px;
-}
-
-#form {
-  font-size: 2rem;
 }
 
 input.inputColor, textarea.inputColor{
@@ -833,7 +836,7 @@ input.inputColor, textarea.inputColor{
 }
 
 #message {
-  height: 220px;
+  height: 205px;
 }
 
 #submitButton {
@@ -844,13 +847,9 @@ input.inputColor, textarea.inputColor{
   padding: 0 60px;
 }
 
-#footer {
+#footerContainer {
   background-color:rgb(56, 56, 56); 
   color: white;
-  font-size: 1.5rem;
-}
-
-#footerContainer {
   padding: 30px; 
   display: flex; 
   justify-content: space-between; 
@@ -858,7 +857,8 @@ input.inputColor, textarea.inputColor{
 }
 
 #copyright {
-  margin-bottom: 0;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .icons {
