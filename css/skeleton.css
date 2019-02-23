@@ -749,11 +749,17 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .expandLinks {
-  font-size: 3rem; 
+  font-size: 2.4rem; 
   width: 45%; 
   padding: 15px; 
   white-space: normal; 
   height: 100%;
+}
+
+@media (min-width: 550px) {
+  .expandLinks {
+    font-size: 3rem;
+  }
 }
 
 .contributions {  
@@ -772,6 +778,7 @@ This is where all of my CSS rules will be stored until further notice
 .madeWith {
   text-align: center; 
   padding: 10px 0; 
+  margin: 40px 0;
   border-bottom: 2px solid white;
 }
 
