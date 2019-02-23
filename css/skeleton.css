@@ -35,11 +35,17 @@
   margin: 0 auto 8% auto;
   padding: 0 20px;
   box-sizing: border-box; }
+
+.row {
+  padding-bottom: 20px;
+}
+
 .column,
 .columns {
   width: 100%;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  margin-bottom: 20px;}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -50,11 +56,15 @@
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
+  .row {
+    padding-bottom: 40px;
+  }
   .container {
     width: 80%; }
   .column,
   .columns {
-    margin-left: 4%; }
+    margin-left: 4%;
+    margin-bottom: 0; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -443,6 +453,7 @@ This is where all of my CSS rules will be stored until further notice
 
 #topBar {
   margin-top: 4%;
+  margin-bottom: 0;
 }
 
 #logoContainer {
@@ -497,9 +508,7 @@ This is where all of my CSS rules will be stored until further notice
 
 #navButtonContainer {
   display: flex; 
-  justify-content: space-evenly; 
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 @media (min-width: 550px) {
@@ -528,18 +537,29 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .sectionHeader {
-  margin: 75px 0 100px 0;
+  margin: 50px 0 66px 0;
+}
+
+@media (min-width: 550px) {
+  .sectionHeader {
+    margin: 75px 0 100px 0;
+  }
 }
 
 .bottomButtons {
   padding: 10px 0;
   width: 100%;
   height: auto;
+  white-space: normal
 }
 
 .learn-more {
   height: 60px; 
   width: 100%; 
+}
+
+.technologiesUsedList {
+  list-style-position: outside;
 }
 
 .stepsContainer {
@@ -552,7 +572,7 @@ This is where all of my CSS rules will be stored until further notice
   }
 }
 
-.test {
+.stepContainer {
   border: 2px solid lightgray;
   outline: 3px solid darkgray;
   padding:0 20px;
@@ -561,7 +581,13 @@ This is where all of my CSS rules will be stored until further notice
 .testimonialContainer {
   border-radius: 250px; 
   background-color:lightpink; 
+  padding: 50px 50px 30px 50px;
+}
+
+@media (min-width: 550px) {
+ .testimonialContainer {
   padding: 60px 80px;
+ }
 }
 
 .leftQuote {
@@ -571,8 +597,20 @@ This is where all of my CSS rules will be stored until further notice
   right: 60px;
 }
 
-.testimonialName, .testimonialText {
+.testimonialName {
+  margin-bottom: 0;
   text-align: center;
+}
+
+.testimonialText {
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  .testimonialText {
+    margin: inherit;
+  }
 }
 
 .quoteRight {
@@ -670,7 +708,7 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .projectDescription {
-  padding: 6% 0; 
+  padding: 3% 0; 
   margin-bottom: 0; 
   font-size: 2rem;
 }
@@ -709,8 +747,8 @@ This is where all of my CSS rules will be stored until further notice
 }
 
 .contributions {  
-  padding-bottom: 10px;
-  margin: 40px;
+  padding: 10px 0;
+  margin: 40px 0;
   text-align: center; 
   border-bottom: 2px solid white;
 }
