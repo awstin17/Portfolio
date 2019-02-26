@@ -513,6 +513,7 @@ This is where all of my CSS rules will be stored until further notice
 
 #navButtonContainer {
   display: flex; 
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -531,6 +532,19 @@ This is where all of my CSS rules will be stored until further notice
   border-right: none;
   border-radius: 0;
   margin-bottom: 0;
+  transition: all .5s;
+}
+
+.navButtons:hover {
+  color: #333;
+  border-color: #333;
+  background-color: #DDD7F0;
+}
+
+@media (min-width: 550px) {
+  .navButtons {
+    width: 30%;
+  }
 }
 
 #currentPageButton {
