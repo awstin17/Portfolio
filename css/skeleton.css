@@ -525,7 +525,7 @@ This is where all of my CSS rules will be stored until further notice
 
 .navButtons {
   padding: 10px 0;
-  width: 100%;
+  width: 90%;
   height: auto;
   border-bottom: none;
   border-left: none;
@@ -543,7 +543,7 @@ This is where all of my CSS rules will be stored until further notice
 
 @media (min-width: 550px) {
   .navButtons {
-    width: 30%;
+    width: 24%;
   }
 }
 
