@@ -824,12 +824,17 @@ This is where all of my CSS rules will be stored until further notice
   /* text-shadow: 1px 10px 20px grey; */
 }
 
-#snapzCarousel,
+/* #snapzCarousel,
 #rebootCarousel,
 #stockathonCarousel,
 #bankAppCarousel,
 #whatsinthebagsCarousel,
 #wesleystudiCarousel {
+  order: 9;
+  margin: auto;
+} */
+
+.imageSection {
   order: 9;
   margin: auto;
 }

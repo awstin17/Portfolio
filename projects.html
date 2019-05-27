@@ -1,483 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Austin Wiese - Official</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rationale"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Metrophobic"
+      rel="stylesheet"
+    />
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/First Logo.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/First Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
-        <div class="row" id="topBar">
-
-            <div id="logoContainer" class="three columns">
-                <img id="logo" src="images/First Logo.png">
-            </div>
-
-            <div class="nine columns" id="heading">
-                <h2 id="name"> Austin Wiese </h2>
-                <h5 id="coolDude">Front and back-end web developer (and cool dude)</h5>
-            </div>
+      <div class="row" id="topBar">
+        <div id="logoContainer" class="three columns">
+          <img id="logo" src="images/First Logo.png" />
         </div>
 
-        <div id="navButtonContainer">
-            <a class="button navButtons" href="./index.html">About Me</a>
-            <a class="button navButtons" href="./what-i-do.html">What I Do</a>
-            <a class="button navButtons" href="./projects.html">Projects</a>
-            <a class="button navButtons" href="./contact-me.html">Contact Me</a>
+        <div class="nine columns" id="heading">
+          <h2 id="name">Austin Wiese</h2>
+          <h5 id="coolDude">
+            Front and back-end web developer (and cool dude)
+          </h5>
         </div>
-        <h2 id="currentPageButton">PROJECTS</h2>
+      </div>
 
-        <div class="row">
+      <div id="navButtonContainer">
+        <a class="button navButtons" href="./index.html">About Me</a>
+        <a class="button navButtons" href="./what-i-do.html">What I Do</a>
+        <a class="button navButtons" href="./projects.html">Projects</a>
+        <a class="button navButtons" href="./contact-me.html">Contact Me</a>
+      </div>
+      <h2 id="currentPageButton">PROJECTS</h2>
 
-            <div class="twelve columns projects">
-                <h3 class="projectTitle">Wesley Studi website</h3>
-                <div class="carousel">
-                    <div class="leftButtonCarousel"><i onclick="previousImage('wesleystudiCarousel')"
-                            style="cursor: pointer" class="fa fa-arrow-circle-left carouselIcons"
-                            aria-hidden="true"></i></div>
-                    <div id="wesleystudiCarousel">
-                        <img width="100%" class="projectImages displayingImage" src="images/Wesley Home Page.png">
-                        <img width="100%" class="projectImages hiddenImage" src="images/Wesley Studi About Page.png">
-                        <img width="100%" class="projectImages hiddenImage" src="images/Wesley Studi Contact Page.png">
-                    </div>
-                    <div class="rightButtonCarousel"><i onclick="nextImage('wesleystudiCarousel')"
-                            class="fa fa-arrow-circle-right carouselIcons" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <p class="projectDescription">The official website of actor Wesley Studi - made with WordPress</p>
-
+      <div class="row">
+        <div class="twelve columns projects">
+          <h3 class="projectTitle">Wesley Studi website</h3>
+          <div class="carousel">
+            <div class="leftButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-left carouselIcons"
+                aria-hidden="true"
+              ></i>
             </div>
-
+            <div id="wesleystudiCarousel" class="imageSection">
+              <img
+                width="100%"
+                class="projectImages displayingImage"
+                src="images/Wesley Home Page.png"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/Wesley Studi About Page.png"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/Wesley Studi Contact Page.png"
+              />
+            </div>
+            <div class="rightButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-right carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <p class="projectDescription">
+            The official website of actor Wesley Studi - made with WordPress
+          </p>
         </div>
+      </div>
 
-        <button onclick="expand(wesleystudiExpandSection, 0)" class="learn-more">Learn More</button>
+      <button class="learn-more">
+        Learn More
+      </button>
 
-        <div id="wesleystudiExpand" class="unexpanded">
-            <p class="arrow"> &darr;</p>
-            <div class="row expandContent">
-                <div class="expandLinksContainer">
-                    <a href="https://wesleystudi.com" target="_blank" class="button button-primary expandLinks">Visit
-                        Website</a>
-                </div>
+      <div id="wesleystudiExpand" class="unexpanded">
+        <p class="arrow">&darr;</p>
+        <div class="row expandContent">
+          <div class="expandLinksContainer">
+            <a
+              href="https://wesleystudi.com"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Visit Website</a
+            >
+          </div>
 
-                <div class="header"></div>
-                <!-- This div only exists to be able to scroll to
+          <div class="scrollHere"></div>
+          <!-- This div only exists to be able to scroll to
                                     Same div can be found with each project -->
 
-                <h3 class="contributions">Technical Details</h3>
-                <ol class="contributionsList">
-                    <li> Made with the Bridge theme by QODE. Optimized for viewing on all devices</li>
-                    <li> Implemented custom CSS to fix appearance issues when needed
-                    </li>
-                    <li> Used Contact Form 7 plugin so visitors can contact Wes. Also used Slider Revolution plugin to
-                        create interactive slideshow on home page </li>
-                    <li> Made tutorial videos so they can take over basic site maintenance</li>
-                </ol>
-                <h3 class="madeWith">Made With</h3>
-                <div class="iconsContainer">
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/WordPress Logo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" class="icon" width="100%" src="images/bridge logo.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="twelve columns projects">
-                <h3 class="projectTitle">What's In The Bags</h3>
-                <div class="carousel">
-                    <div class="leftButtonCarousel"><i onclick="previousImage('whatsinthebagsCarousel')"
-                            style="cursor: pointer" class="fa fa-arrow-circle-left carouselIcons"
-                            aria-hidden="true"></i></div>
-                    <div id="whatsinthebagsCarousel">
-                        <img width="100%" class="projectImages displayingImage" src="images/WITB Home.png">
-                        <img width="100%" class="projectImages hiddenImage" src="images/WITB About.png">
-                        <img width="100%" class="projectImages hiddenImage" src="images/WITB Blog.png">
-                        <img width="100%" class="projectImages hiddenImage" src="images/WITB Footer.png">
-                    </div>
-                    <div class="rightButtonCarousel"><i onclick="nextImage('whatsinthebagsCarousel')"
-                            class="fa fa-arrow-circle-right carouselIcons" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <p class="projectDescription">What's In The Bags is a WordPress travel/shopping multi-blog website and
-                    business based
-                    in San Diego</p>
-
+          <h3 class="contributions">Technical Details</h3>
+          <ol class="contributionsList">
+            <li>
+              Made with the Bridge theme by QODE. Optimized for viewing on all
+              devices
+            </li>
+            <li>Implemented custom CSS to fix appearance issues when needed</li>
+            <li>
+              Used Contact Form 7 plugin so visitors can contact Wes. Also used
+              Slider Revolution plugin to create interactive slideshow on home
+              page
+            </li>
+            <li>
+              Made tutorial videos so they can take over basic site maintenance
+            </li>
+          </ol>
+          <h3 class="madeWith">Made With</h3>
+          <div class="iconsContainer">
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/WordPress Logo.png" />
             </div>
 
+            <div class="iconContainer">
+              <img
+                class="icon"
+                class="icon"
+                width="100%"
+                src="images/bridge logo.png"
+              />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <button onclick="expand(whatsinthebagsExpandSection, 1)" class="learn-more">Learn More</button>
+      <div class="row">
+        <div class="twelve columns projects">
+          <h3 class="projectTitle">What's In The Bags</h3>
+          <div class="carousel">
+            <div class="leftButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-left carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div id="whatsinthebagsCarousel" class="imageSection">
+              <img
+                width="100%"
+                class="projectImages displayingImage"
+                src="images/WITB Home.png"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/WITB About.png"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/WITB Blog.png"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/WITB Footer.png"
+              />
+            </div>
+            <div class="rightButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-right carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <p class="projectDescription">
+            What's In The Bags is a WordPress travel/shopping multi-blog website
+            and business based in San Diego
+          </p>
+        </div>
+      </div>
 
-        <div id="whatsinthebagsExpand" class="unexpanded">
-            <p class="arrow"> &darr;</p>
-            <div class="row expandContent">
-                <div class="expandLinksContainer">
-                    <a href="https://www.whatsinthebags.com" target="_blank"
-                        class="button button-primary expandLinks">Visit Website</a>
-                </div>
+      <button class="learn-more">
+        Learn More
+      </button>
 
-                <div class="header"></div>
-                <!-- This div only exists to be able to scroll to
+      <div id="whatsinthebagsExpand" class="unexpanded">
+        <p class="arrow">&darr;</p>
+        <div class="row expandContent">
+          <div class="expandLinksContainer">
+            <a
+              href="https://www.whatsinthebags.com"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Visit Website</a
+            >
+          </div>
+
+          <div class="scrollHere"></div>
+          <!-- This div only exists to be able to scroll to
                                 Same div can be found with each project -->
 
-                <h3 class="contributions">Technical Details</h3>
-                <ol class="contributionsList">
-                    <li> Hand-drew the logo first, then created it using Inkscape vector illustration program</li>
-                    <li> Designed website from scratch. Selected WordPress theme Cheery and then tweaked with custom CSS
-                    </li>
-                    <li> Created subscription feature using MailPoet plugin. Visitors to the site can subscribe to any
-                        of the blogs and receive email updates when there is new content </li>
-                    <li> Made tutorial videos so owner can take over basic maintenance and content creation</li>
-                </ol>
-                <h3 class="madeWith">Made With</h3>
-                <div class="iconsContainer">
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/WordPress Logo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/mailpoet-logo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/Inkscape Logo.svg">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="twelve columns projects">
-                <h3 class="projectTitle">Reboot</h3>
-                <div class="carousel">
-                    <div class="leftButtonCarousel"><i onclick="previousImage('rebootCarousel')" style="cursor: pointer"
-                            class="fa fa-arrow-circle-left carouselIcons" aria-hidden="true"></i></div>
-                    <div id="rebootCarousel">
-                        <img width="100%" class="projectImages displayingImage" src="images/Login Page Reboot.PNG">
-                        <img width="100%" class="projectImages hiddenImage" src="images/Transition Page.PNG">
-                        <img width="100%" class="projectImages hiddenImage" src="images/Dashboard Reboot.PNG">
-                    </div>
-                    <div class="rightButtonCarousel"><i onclick="nextImage('rebootCarousel')"
-                            class="fa fa-arrow-circle-right carouselIcons" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <p class="projectDescription">Reboot is a team-built, iPad oriented
-                    application to help veterans
-                    transition
-                    into civilian life. Think of it as a personal assistant!</p>
-
+          <h3 class="contributions">Technical Details</h3>
+          <ol class="contributionsList">
+            <li>
+              Hand-drew the logo first, then created it using Inkscape vector
+              illustration program
+            </li>
+            <li>
+              Designed website from scratch. Selected WordPress theme Cheery and
+              then tweaked with custom CSS
+            </li>
+            <li>
+              Created subscription feature using MailPoet plugin. Visitors to
+              the site can subscribe to any of the blogs and receive email
+              updates when there is new content
+            </li>
+            <li>
+              Made tutorial videos so owner can take over basic maintenance and
+              content creation
+            </li>
+          </ol>
+          <h3 class="madeWith">Made With</h3>
+          <div class="iconsContainer">
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/WordPress Logo.png" />
             </div>
 
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/mailpoet-logo.png" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/Inkscape Logo.svg" />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <button onclick="expand(rebootExpandSection, 2)" class="learn-more">Learn More</button>
+      <div class="row">
+        <div class="twelve columns projects">
+          <h3 class="projectTitle">Reboot</h3>
+          <div class="carousel">
+            <div class="leftButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-left carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div id="rebootCarousel" class="imageSection">
+              <img
+                width="100%"
+                class="projectImages displayingImage"
+                src="images/Login Page Reboot.PNG"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/Transition Page.PNG"
+              />
+              <img
+                width="100%"
+                class="projectImages hiddenImage"
+                src="images/Dashboard Reboot.PNG"
+              />
+            </div>
+            <div class="rightButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-right carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <p class="projectDescription">
+            Reboot is a team-built, iPad oriented application to help veterans
+            transition into civilian life. Think of it as a personal assistant!
+          </p>
+        </div>
+      </div>
 
-        <div id="rebootExpand" class="unexpanded">
-            <p class="arrow"> &darr;</p>
-            <div class="row expandContent">
-                <div class="expandLinksContainer">
-                    <a href="https://github.com/awstin17/reboot.git" target="_blank"
-                        class="button button-primary expandLinks">Github</a>
-                    <a href="https://reboot-demo-2.firebaseapp.com/" target="_blank"
-                        class="button button-primary expandLinks">Demo</a>
-                </div>
+      <button class="learn-more">
+        Learn More
+      </button>
 
-                <div class="header"></div>
-                <!-- This div only exists to be able to scroll to
+      <div id="rebootExpand" class="unexpanded">
+        <p class="arrow">&darr;</p>
+        <div class="row expandContent">
+          <div class="expandLinksContainer">
+            <a
+              href="https://github.com/awstin17/reboot.git"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Github</a
+            >
+            <a
+              href="https://reboot-demo-2.firebaseapp.com/"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Demo</a
+            >
+          </div>
+
+          <div class="scrollHere"></div>
+          <!-- This div only exists to be able to scroll to
                         Same div can be found with each project -->
 
-                <h3 class="contributions">My Contributions</h3>
-                <ol class="contributionsList">
-                    <li> The lovely looking transition page with the big chart at the top. This is where the user can
-                        self-assess various categories of their life to track their progress </li>
-                    <li> The slider functionality on the transition page </li>
-                    <li> The dashboard page styling and layout</li>
-                    <li> The charts on both the dashboard and transition pages. Made with the chartjs library and the chartjs datalabels plugin to
-                        make those snazzy labels that circle the charts</li>
-                </ol>
-                <h3 class="madeWith">Made With</h3>
-                <div class="iconsContainer">
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/Nodejslogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" src="images/angular.svg">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/mongodblogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%"
-                            src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" id="herokuIcon" src="images/heroku.svg">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="twelve columns projects">
-                <h3 class="projectTitle">Snapz</h3>
-
-                <div class="carousel"> 
-                    <div class="leftButtonCarousel"><i onclick="previousImage('snapzCarousel')"
-                            class="fa fa-arrow-circle-left carouselIcons" aria-hidden="true"></i></div>
-                    <div id="snapzCarousel">
-                        <img class="displayingImage projectImages" src="images/Snapz register page.PNG">
-                        <img class="hiddenImage projectImages" src="images/Snapz login page.PNG">
-                        <img class="hiddenImage projectImages" src="images/Snapz Dashboard.png">
-                        <img class="hiddenImage projectImages" src="images/Snapz edit page.PNG">
-                    </div> 
-                    <div class="rightButtonCarousel"><i onclick="nextImage('snapzCarousel')"
-                            class="fa fa-arrow-circle-right carouselIcons" aria-hidden="true"></i>
-                    </div>
-                </div>  
-
-                <p class="projectDescription">An ionic app for mobile phones that enables the user to
-                    capture photos and store them with a subtitle and description </p>
+          <h3 class="contributions">My Contributions</h3>
+          <ol class="contributionsList">
+            <li>
+              The lovely looking transition page with the big chart at the top.
+              This is where the user can self-assess various categories of their
+              life to track their progress
+            </li>
+            <li>The slider functionality on the transition page</li>
+            <li>The dashboard page styling and layout</li>
+            <li>
+              The charts on both the dashboard and transition pages. Made with
+              the chartjs library and the chartjs datalabels plugin to make
+              those snazzy labels that circle the charts
+            </li>
+          </ol>
+          <h3 class="madeWith">Made With</h3>
+          <div class="iconsContainer">
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/Nodejslogo.png" />
             </div>
 
-        </div>
-
-        <button onclick="expand(snapzExpandSection, 3)" class="learn-more">Learn More</button>
-
-        <div id="snapzExpand" class="unexpanded">
-            <p class="arrow"> &darr;</p>
-            <div class="row expandContent">
-                <div class="expandLinksContainer">
-                    <a href="https://github.com/awstin17/Capture-Store.git" target="_blank"
-                        class="button button-primary expandLinks">Github</a>
-                    <a href="https://snapz-demo.firebaseapp.com" target="_blank"
-                        class="button button-primary expandLinks">Demo</a>
-                </div>
-                <div class="header"></div>
-                <h3 class="contributions">Technical Details</h3>
-                <ol class="contributionsList">
-                    <li> A mock-up was made prior to starting the project. Made with Balsamiq </li>
-                    <li> Created a database so users can register and log in</li>
-                    <li> This hybrid mobile application allows the user to access native camera functionality
-                        through a Cordova API to take a picture and save it to their profile in the database </li>
-                    <li> The user may also edit their photos' subtitles and descriptions, or delete the photo from
-                        their profile if they wish </li>
-
-                </ol>
-                <h3 class="madeWith">Made With</h3>
-                <div class="iconsContainer">
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/Nodejslogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" src="images/angular.svg">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/mongodblogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%"
-                            src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/cordova_logo_white.png">
-                    </div>
-
-                </div>
+            <div class="iconContainer">
+              <img class="icon" src="images/angular.svg" />
             </div>
-        </div>
 
-        <div class="row">
-            <div class="twelve columns projects">
-                <h3 class="projectTitle">Stockathon</h3>  
-                <div class="carousel">
-                    <div class="leftButtonCarousel"><i onclick="previousImage('stockathonCarousel')"
-                            class="fa fa-arrow-circle-left carouselIcons" aria-hidden="true"></i></div>
-                    <div id="stockathonCarousel">
-                        <img src="images/Stockathon Trends Page.PNG" class="projectImages hiddenImage">
-                        <img src="images/Stockathon Dashboard.PNG" class="projectImages displayingImage">
-                        <img src="images/Stockathon login page.PNG" class="projectImages hiddenImage">
-                        <img src="images/Stockathon Register Page.PNG" class="projectImages hiddenImage">
-                    </div>
-                    <div class="rightButtonCarousel"><i onclick="nextImage('stockathonCarousel')"
-                            class="fa fa-arrow-circle-right carouselIcons" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <p class="projectDescription">A MEAN stack app that tells you historical stock data as
-                    well as stock values for the day</p>
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/mongodblogo.png" />
             </div>
-        </div>
 
-        <button onclick="expand(stockathonExpandSection, 4)" class="learn-more">Learn More</button>
-
-        <div id="stockathonExpand" class="unexpanded">
-            <p class="arrow"> &darr;</p>
-            <div class="row expandContent">
-                <div class="expandLinksContainer">
-                    <a href="https://github.com/awstin17/clarity.git" target="_blank"
-                        class="button button-primary expandLinks">Github</a>
-                    <a href="https://stockathon.netlify.com" target="_blank"
-                        class="button button-primary expandLinks">Demo</a>
-                </div>
-                <div class="header"></div>
-                <h3 class="contributions">Technical Details</h3>
-                <ol class="contributionsList">
-                    <li> This web application retrieves stock market data from the <a id="alphavantageLink"
-                            href="https://www.alphavantage.co/" target="blank">Alpha
-                            Vantage API</a> </li>
-                    <li> The graph that displays monthly stock data was created using the ng2-charts library</li>
-                    <li> General application layout created using the clarity seed HTML/CSS framework </li>
-                    <li> Created a database so users can register, log in, and save specific stocks they want to track.
-                        That
-                        way, when they log in again, they'll see the most up to date information for the stocks that
-                        they care about</li>
-                </ol>
-                <h3 class="madeWith">Made With</h3>
-                <div class="iconsContainer">
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/Nodejslogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" src="images/angular.svg">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/mongodblogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/Clarity Logo.png">
-                    </div>
-
-                </div>
+            <div class="iconContainer">
+              <img
+                class="icon"
+                width="100%"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg"
+              />
             </div>
-        </div>
 
-        <div class="row">
-            <div class="twelve columns projects">
-                <h3 class="projectTitle">Bank Application</h3>
-                <div class="carousel">
-                    <div class="leftButtonCarousel"><i onclick="previousImage('bankAppCarousel')"
-                            class="fa fa-arrow-circle-left carouselIcons" aria-hidden="true"></i></div>
-                    <div id="bankAppCarousel">
-                        <img src="images/Bank Application ATM View.png" class="projectImages displayingImage">
-                        <img src="images/Bank App Teller View.png" class="projectImages hiddenImage">
-                    </div>
-                    <div class="rightButtonCarousel"><i onclick="nextImage('bankAppCarousel')"
-                            class="fa fa-arrow-circle-right carouselIcons" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <p class="projectDescription">An app that emulates ATM interactions or interactions with a
-                    teller at a bank
+            <div class="iconContainer">
+              <img class="icon" id="herokuIcon" src="images/heroku.svg" />
             </div>
+          </div>
         </div>
+      </div>
 
-        <button onclick="expand(bankExpandSection, 5)" class="learn-more">Learn More</button>
+      <div class="row">
+        <div class="twelve columns projects">
+          <h3 class="projectTitle">Snapz</h3>
 
-        <div id="bankExpand" class="unexpanded">
-            <p class="arrow"> &darr;</p>
-            <div class="row expandContent">
-                <div class="expandLinksContainer">
-                    <a href="https://github.com/awstin17/Bank-Application.git" target="_blank"
-                        class="button button-primary expandLinks">Github</a>
-                    <a href="https://bank-app-demo.netlify.com" target="_blank"
-                        class="button button-primary expandLinks">Demo</a>
-                </div>
-                <div class="header" style="margin-bottom: 20px;"></div>
-
-                <h3 class="contributions">Technical Details</h3>
-
-                <ol class="contributionsList">
-                    <li> This is a single page application which allows the user to "deposit" or "widthdraw" money from
-                        their account </li>
-                    <li> Made possible with angular routing and angular services</li>
-                </ol>
-
-                <h3 class="madeWith">Made With</h3>
-
-                <div class="iconsContainer">
-                    <div class="iconContainer">
-                        <img class="icon" width="100%" src="images/Nodejslogo.png">
-                    </div>
-
-                    <div class="iconContainer">
-                        <img class="icon" src="images/angular.svg">
-                    </div>
-
-                </div>
+          <div class="carousel">
+            <div class="leftButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-left carouselIcons"
+                aria-hidden="true"
+              ></i>
             </div>
+            <div id="snapzCarousel" class="imageSection">
+              <img
+                class="displayingImage projectImages"
+                src="images/Snapz register page.PNG"
+              />
+              <img
+                class="hiddenImage projectImages"
+                src="images/Snapz login page.PNG"
+              />
+              <img
+                class="hiddenImage projectImages"
+                src="images/Snapz Dashboard.png"
+              />
+              <img
+                class="hiddenImage projectImages"
+                src="images/Snapz edit page.PNG"
+              />
+            </div>
+            <div class="rightButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-right carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+
+          <p class="projectDescription">
+            An ionic app for mobile phones that enables the user to capture
+            photos and store them with a subtitle and description
+          </p>
         </div>
+      </div>
+
+      <button class="learn-more">
+        Learn More
+      </button>
+
+      <div id="snapzExpand" class="unexpanded">
+        <p class="arrow">&darr;</p>
+        <div class="row expandContent">
+          <div class="expandLinksContainer">
+            <a
+              href="https://github.com/awstin17/Capture-Store.git"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Github</a
+            >
+            <a
+              href="https://snapz-demo.firebaseapp.com"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Demo</a
+            >
+          </div>
+          <div class="scrollHere"></div>
+          <h3 class="contributions">Technical Details</h3>
+          <ol class="contributionsList">
+            <li>
+              A mock-up was made prior to starting the project. Made with
+              Balsamiq
+            </li>
+            <li>Created a database so users can register and log in</li>
+            <li>
+              This hybrid mobile application allows the user to access native
+              camera functionality through a Cordova API to take a picture and
+              save it to their profile in the database
+            </li>
+            <li>
+              The user may also edit their photos' subtitles and descriptions,
+              or delete the photo from their profile if they wish
+            </li>
+          </ol>
+          <h3 class="madeWith">Made With</h3>
+          <div class="iconsContainer">
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/Nodejslogo.png" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" src="images/angular.svg" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/mongodblogo.png" />
+            </div>
+
+            <div class="iconContainer">
+              <img
+                class="icon"
+                width="100%"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg"
+              />
+            </div>
+
+            <div class="iconContainer">
+              <img
+                class="icon"
+                width="100%"
+                src="images/cordova_logo_white.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns projects">
+          <h3 class="projectTitle">Stockathon</h3>
+          <div class="carousel">
+            <div class="leftButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-left carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div id="stockathonCarousel" class="imageSection">
+              <img
+                src="images/Stockathon Trends Page.PNG"
+                class="projectImages hiddenImage"
+              />
+              <img
+                src="images/Stockathon Dashboard.PNG"
+                class="projectImages displayingImage"
+              />
+              <img
+                src="images/Stockathon login page.PNG"
+                class="projectImages hiddenImage"
+              />
+              <img
+                src="images/Stockathon Register Page.PNG"
+                class="projectImages hiddenImage"
+              />
+            </div>
+            <div class="rightButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-right carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <p class="projectDescription">
+            A MEAN stack app that tells you historical stock data as well as
+            stock values for the day
+          </p>
+        </div>
+      </div>
+
+      <button class="learn-more">
+        Learn More
+      </button>
+
+      <div id="stockathonExpand" class="unexpanded">
+        <p class="arrow">&darr;</p>
+        <div class="row expandContent">
+          <div class="expandLinksContainer">
+            <a
+              href="https://github.com/awstin17/clarity.git"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Github</a
+            >
+            <a
+              href="https://stockathon.netlify.com"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Demo</a
+            >
+          </div>
+          <div class="scrollHere"></div>
+          <h3 class="contributions">Technical Details</h3>
+          <ol class="contributionsList">
+            <li>
+              This web application retrieves stock market data from the
+              <a
+                id="alphavantageLink"
+                href="https://www.alphavantage.co/"
+                target="blank"
+                >Alpha Vantage API</a
+              >
+            </li>
+            <li>
+              The graph that displays monthly stock data was created using the
+              ng2-charts library
+            </li>
+            <li>
+              General application layout created using the clarity seed HTML/CSS
+              framework
+            </li>
+            <li>
+              Created a database so users can register, log in, and save
+              specific stocks they want to track. That way, when they log in
+              again, they'll see the most up to date information for the stocks
+              that they care about
+            </li>
+          </ol>
+          <h3 class="madeWith">Made With</h3>
+          <div class="iconsContainer">
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/Nodejslogo.png" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" src="images/angular.svg" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/mongodblogo.png" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/Clarity Logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns projects">
+          <h3 class="projectTitle">Bank Application</h3>
+          <div class="carousel">
+            <div class="leftButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-left carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div id="bankAppCarousel" class="imageSection">
+              <img
+                src="images/Bank Application ATM View.png"
+                class="projectImages displayingImage"
+              />
+              <img
+                src="images/Bank App Teller View.png"
+                class="projectImages hiddenImage"
+              />
+            </div>
+            <div class="rightButtonCarousel">
+              <i
+                class="fa fa-arrow-circle-right carouselIcons"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <p class="projectDescription">
+            An app that emulates ATM interactions or interactions with a teller
+            at a bank
+          </p>
+        </div>
+      </div>
+
+      <button class="learn-more">
+        Learn More
+      </button>
+
+      <div id="bankExpand" class="unexpanded">
+        <p class="arrow">&darr;</p>
+        <div class="row expandContent">
+          <div class="expandLinksContainer">
+            <a
+              href="https://github.com/awstin17/Bank-Application.git"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Github</a
+            >
+            <a
+              href="https://bank-app-demo.netlify.com"
+              target="_blank"
+              class="button button-primary expandLinks"
+              >Demo</a
+            >
+          </div>
+          <div class="scrollHere" style="margin-bottom: 20px;"></div>
+
+          <h3 class="contributions">Technical Details</h3>
+
+          <ol class="contributionsList">
+            <li>
+              This is a single page application which allows the user to
+              "deposit" or "widthdraw" money from their account
+            </li>
+            <li>Made possible with angular routing and angular services</li>
+          </ol>
+
+          <h3 class="madeWith">Made With</h3>
+
+          <div class="iconsContainer">
+            <div class="iconContainer">
+              <img class="icon" width="100%" src="images/Nodejslogo.png" />
+            </div>
+
+            <div class="iconContainer">
+              <img class="icon" src="images/angular.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="footerContainer">
-        <p id="copyright">© 2018 Austin Wiese.</p>
+      <p id="copyright">© 2018 Austin Wiese.</p>
 
-        <div>
-            <a href="contact-me.html"><i class="far fa-envelope icons"></i></a>
-            <a href="https://www.linkedin.com/in/austin-wiese-80a52b91/" target="blank"><i
-                    class="fab fa-linkedin icons"></i></a>
-            <a href="https://github.com/awstin17" target="blank"><i class="fab fa-github icons"></i></a>
-        </div>
+      <div>
+        <a href="contact-me.html"><i class="far fa-envelope icons"></i></a>
+        <a
+          href="https://www.linkedin.com/in/austin-wiese-80a52b91/"
+          target="blank"
+          ><i class="fab fa-linkedin icons"></i
+        ></a>
+        <a href="https://github.com/awstin17" target="blank"
+          ><i class="fab fa-github icons"></i
+        ></a>
+      </div>
     </div>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="portfolio.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,70 +1,59 @@
-let wesleystudiExpandSection = document.getElementById('wesleystudiExpand')
-let whatsinthebagsExpandSection = document.getElementById('whatsinthebagsExpand');
-let rebootExpandSection = document.getElementById('rebootExpand');
-let snapzExpandSection = document.getElementById('snapzExpand');
-let stockathonExpandSection = document.getElementById('stockathonExpand');
-let bankExpandSection = document.getElementById('bankExpand');
-let header;
-let hovers = document.getElementsByClassName('learn-more');
+/* ------------------------------ Begin Extra Info Expanding Section ------------------------------ */
 
-function expand(project, numberInList) {
+//Finds all learn more buttons in project list and adds click event listener to each
+let learnButtons = $(".learn-more");
+learnButtons.each((index, button) => $(button).click(expandToggle));
 
-    if (project.className === "unexpanded") {
-        project.className = "expanded";
-        header = project.querySelector('.header');
-        header.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        changeHoverText(numberInList);
-    }
+function expandToggle(expandEvent) {
+  let learnMoreButton = $(expandEvent.currentTarget); // Find button element that fired off the event
+  let extraInfoSection = learnMoreButton.next(); // Find extra information section right after button
+  let scrollDiv = extraInfoSection.find(".scrollHere")[0]; // Find the div the screen scrolls to after clicking
 
-    else {
-        project.className = "unexpanded";
-        changeHoverText(numberInList);
-    }
+  extraInfoSection.toggleClass("unexpanded expanded"); // Expand/unexpand information
+  scrollDiv.scrollIntoView({ behavior: "smooth", block: "center" }); // Scroll to additional info
+  toggleButtonText(learnMoreButton); // Change button text on button that called this function
 }
 
-function changeHoverText(numberInList) {
-    if (hovers[numberInList].innerHTML === "Learn More") {
-        hovers[numberInList].innerHTML = "Collapse";
-    }
-    else {
-        hovers[numberInList].innerHTML = "Learn More";
-    }
-
+function toggleButtonText(learnMoreButton) {
+  learnMoreButton.text(
+    learnMoreButton.text() == "Collapse" ? "Learn More" : "Collapse"
+  );
 }
 
-function nextImage(carousel) {
-    el = document.querySelector('#' + carousel);
+/* ------------------------------ Begin Image Carousel Section ------------------------------ */
 
-    if (el.querySelectorAll(".displayingImage")[0].nextElementSibling) {
-        el.querySelectorAll(".displayingImage")[0].nextElementSibling.classList.remove("hiddenImage");
-        el.querySelectorAll(".displayingImage")[0].nextElementSibling.classList.add("displayingImage");
-        el.querySelectorAll(".displayingImage")[0].classList.add("hiddenImage");
-        el.querySelectorAll(".displayingImage")[0].classList.remove("displayingImage");
-    }
+// Finds all right arrow buttons on image carousels and add click event listener
+let rightCarouselButtons = $(".rightButtonCarousel");
+rightCarouselButtons.each((index, button) => $(button).click(displayNextImage));
 
-    else {
-        el.querySelectorAll(".displayingImage")[0].parentElement.firstElementChild.classList.add("displayingImage");
-        el.querySelectorAll(".displayingImage")[0].parentElement.firstElementChild.classList.remove("hiddenImage");
-        el.querySelectorAll(".displayingImage")[1].classList.add("hiddenImage");
-        el.querySelectorAll(".displayingImage")[1].classList.remove("displayingImage");
-    }
+// Finds all left arrow buttons on image carousels and adds click event listener
+let leftCarouselButtons = $(".leftButtonCarousel");
+leftCarouselButtons.each((index, button) =>
+  $(button).click(displayPreviousImage)
+);
+
+function displayNextImage(nextImageEvent) {
+  let displayingImage = $(nextImageEvent.currentTarget)
+    .prev()
+    .children(".displayingImage");
+
+  let nextImage = displayingImage.next()[0]
+    ? displayingImage.next()
+    : displayingImage.siblings(":first");
+
+  displayingImage.toggleClass("displayingImage hiddenImage");
+  nextImage.toggleClass("displayingImage hiddenImage");
 }
 
-function previousImage(carousel) {
+function displayPreviousImage(previousImageEvent) {
+  let displayingImage = $(previousImageEvent.currentTarget)
+    .next()
+    .children(".displayingImage");
 
-    el = document.querySelector('#' + carousel);
+  let previousImage = displayingImage.prev()[0]
+    ? displayingImage.prev()
+    : displayingImage.siblings(":last");
 
-    if (el.querySelectorAll(".displayingImage")[0].previousElementSibling) {
-        el.querySelectorAll(".displayingImage")[0].previousElementSibling.classList.remove("hiddenImage");
-        el.querySelectorAll(".displayingImage")[0].previousElementSibling.classList.add("displayingImage");
-        el.querySelectorAll(".displayingImage")[1].classList.add("hiddenImage");
-        el.querySelectorAll(".displayingImage")[1].classList.remove("displayingImage");
-    }
-
-    else {
-        el.querySelectorAll(".displayingImage")[0].parentElement.lastElementChild.classList.add("displayingImage");
-        el.querySelectorAll(".displayingImage")[0].parentElement.lastElementChild.classList.remove("hiddenImage");
-        el.querySelectorAll(".displayingImage")[0].classList.add("hiddenImage");
-        el.querySelectorAll(".displayingImage")[0].classList.remove("displayingImage");
-    }
+  displayingImage.toggleClass("displayingImage hiddenImage");
+  previousImage.toggleClass("displayingImage hiddenImage");
 }
