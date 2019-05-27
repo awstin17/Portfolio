@@ -824,26 +824,9 @@ This is where all of my CSS rules will be stored until further notice
   /* text-shadow: 1px 10px 20px grey; */
 }
 
-/* #snapzCarousel,
-#rebootCarousel,
-#stockathonCarousel,
-#bankAppCarousel,
-#whatsinthebagsCarousel,
-#wesleystudiCarousel {
-  order: 9;
-  margin: auto;
-} */
-
 .imageSection {
   order: 9;
   margin: auto;
-}
-
-#rebootCarousel,
-#stockathonCarousel,
-#bankAppCarousel,
-#whatsinthebagsCarousel,
-#wesleystudiCarousel {
   width: 100%;
 }
 
@@ -857,26 +840,15 @@ This is where all of my CSS rules will be stored until further notice
     width: 10%;
   }
 
-  #snapzCarousel,
-  #rebootCarousel,
-  #stockathonCarousel,
-  #bankAppCarousel,
-  #whatsinthebagsCarousel,
-  #wesleystudiCarousel {
+  .imageSection {
     order: 0;
-  }
-
-  #rebootCarousel,
-  #stockathonCarousel,
-  #bankAppCarousel,
-  #whatsinthebagsCarousel,
-  #wesleystudiCarousel {
     width: 70%;
   }
 
   #snapzCarousel {
     width: 30%;
   }
+
   .carousel {
     flex-wrap: nowrap;
   }
