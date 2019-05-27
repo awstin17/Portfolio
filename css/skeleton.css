@@ -682,6 +682,7 @@ This is where all of my CSS rules will be stored until further notice
   width: 100%;
   margin-top: 8%;
   margin-left: 0;
+  position: relative;
 }
 
 @media (min-width: 1000px) {

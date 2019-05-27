@@ -50,20 +50,51 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+
+    <!-- Animation
+    ---------------------------------------------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
   </head>
 
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <a
+      target="_blank"
+      href="documents/Resume.pdf"
+      id="mobile-resume-container"
+      class="animated pulse infinite"
+    >
+      <i class="fas fa-file"></i>
+      <h6 style="font-size: 1.2rem">Resume</h6>
+    </a>
+
     <div class="container">
       <div class="row" id="topBar">
         <div id="logoContainer" class="three columns">
           <img id="logo" src="images/First Logo.png" />
         </div>
 
-        <div class="nine columns" id="heading">
+        <div class="seven columns" id="heading">
           <h2 id="name">Austin Wiese</h2>
-          <h5 id="coolDude">Full Stack Web Developer</h5>
+          <h5 id="coolDude">
+            Full Stack Web Developer
+          </h5>
+          <!-- this a tag is for above 750px screens -->
+          <a
+            target="_blank"
+            href="documents/Resume.pdf"
+            id="resume-container"
+            href="documents/Resume.pdf"
+            class="animated pulse infinite"
+          >
+            <i class="fas fa-file"></i>
+            <h6>Resume</h6>
+          </a>
         </div>
       </div>
 
