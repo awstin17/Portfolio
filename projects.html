@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8" />
@@ -56,18 +60,49 @@
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- This a tag is for up to 750px screens -->
+    <a
+      target="_blank"
+      href="documents/Resume.pdf"
+      id="mobile-resume-container"
+      class="animated pulse infinite"
+    >
+      <i class="fas fa-file"></i>
+      <h6 style="font-size: 1.2rem">Resume</h6>
+    </a>
+
     <div class="container">
       <div class="row" id="topBar">
         <div id="logoContainer" class="three columns">
           <img id="logo" src="images/First Logo.png" />
         </div>
 
-        <div class="nine columns" id="heading">
-          <h2 id="name">Austin Wiese</h2>
-          <h5 id="coolDude">
-            Full Stack Web Developer
-          </h5>
+        <div class="seven columns" id="heading">
+          <div id="test" style="position: relative">
+            <h2 id="name">Austin Wiese</h2>
+            <h5 id="coolDude">
+              Full Stack Web Developer
+            </h5>
+            <!-- this a tag is for above 750px screens -->
+            <a
+              target="_blank"
+              href="documents/Resume.pdf"
+              id="resume-container"
+              href="documents/Resume.pdf"
+              class="animated pulse infinite"
+            >
+              <i class="fas fa-file"></i>
+              <h6>Resume</h6>
+            </a>
+          </div>
         </div>
+
+        <!-- <div class="one column" style="margin-top: 70px">
+          <a>
+            <i class="fas fa-file"></i>
+            <h6>Resume</h6>
+          </a>
+        </div> -->
       </div>
 
       <div id="navButtonContainer">
